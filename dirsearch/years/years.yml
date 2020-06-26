@@ -1,0 +1,21 @@
+years:
+  - "2017"
+  - "2018"
+  - "2019"
+  - "2020"
+  - "2021"
+  - "2022"
+
+exts:
+  - .zip
+  - .tar.gz
+  - .tar
+  - .rar
+  - .gz
+  - .7z
+  - .sql
+
+target:
+  - "%years;%exts;"
+  - "dump%years;%exts;"
+  - "dump_%years;%exts;"

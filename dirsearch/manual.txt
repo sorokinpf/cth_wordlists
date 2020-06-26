@@ -1,0 +1,9 @@
+wp-json
+wp-admin/admin-ajax.php
+AUTHORS
+CHANGELOG.md
+COPYING
+auth/registration
+auth/forgot_password
+auth/forgot
+wiki
