@@ -6101,7 +6101,8 @@ zf_backend.php
 zimbra
 zimbra/
 zone-h.php
-~admin/wp-json
+~admin/
+wp-json
 wp-admin/admin-ajax.php
 AUTHORS
 CHANGELOG.md
