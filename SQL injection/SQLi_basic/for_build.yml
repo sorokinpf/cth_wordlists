@@ -1,0 +1,15 @@
+vectors:
+  - "'%brackets;%comments;"
+  - "'%brackets; or 1=1%comments;"
+  - "'%brackets; or 1=2%comments;"
+  - "'%brackets; and 1=1%comments;"
+
+brackets:
+  - ""
+  - ")"
+  - ")) "
+  - ")))"
+
+comments:
+  - " -- "
+  - "/* "
