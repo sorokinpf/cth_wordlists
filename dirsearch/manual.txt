@@ -7,3 +7,11 @@ auth/registration
 auth/forgot_password
 auth/forgot
 wiki
+server-status?full
+.env.local
+.env.prod.local
+.env.dev.local
+.env.test.local
+.env.prod
+.env.dev
+.env.test

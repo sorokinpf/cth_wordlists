@@ -6111,6 +6111,14 @@ auth/registration
 auth/forgot_password
 auth/forgot
 wiki
+server-status?full
+.env.local
+.env.prod.local
+.env.dev.local
+.env.test.local
+.env.prod
+.env.dev
+.env.test
 2017.zip
 2017.tar.gz
 2017.tar
