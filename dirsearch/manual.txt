@@ -15,3 +15,4 @@ server-status?full
 .env.prod
 .env.dev
 .env.test
+images/json
