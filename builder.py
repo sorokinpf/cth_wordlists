@@ -12,6 +12,7 @@ def parse(val_name,schema):
         if len(sub_vals)==0:
             result.append(v)
             continue
+        #print (sub_vals)
         sub_arrays = []
         sub_vals_uniq = []
         for sub_val in sub_vals:
@@ -19,13 +20,15 @@ def parse(val_name,schema):
                 continue
             sub_vals_uniq.append(sub_val)
             sub_arrays.append(parse(sub_val,schema))
-        #print (sub_arrays)
+        #print ('sub_arrays:',sub_vals_uniq)
         #print (sub_vals_uniq)
         possible_values = itertools.product(*sub_arrays)
 
         for x in possible_values:
+
             generating_v = v
-            for sub_val_name,sub_val_value in zip(sub_vals,x):
+            #print (x , generating_v, sub_vals)
+            for sub_val_name,sub_val_value in zip(sub_vals_uniq,x):
                 generating_v = generating_v.replace('%%%s;'%sub_val_name,sub_val_value)
             result.append(generating_v)
     return result

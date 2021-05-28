@@ -1,0 +1,1 @@
+python ../../builder.py vectors.yaml vectors time-os-cmd-inj.txt

