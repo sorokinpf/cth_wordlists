@@ -1,11 +1,18 @@
 #!/bin/sh
 
+echo 'Creating years wordlist'
+python ../builder.py years/years.yml years/years.txt
+
 echo 'Downloading dirsearch wordlist'
 wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt -O dirsearch.txt
 echo 'Creating full.txt'
 cp dirsearch.txt full.txt
 cat manual.txt >> full.txt
 cat years/years.txt >> full.txt
+
+echo 'Downloading Bo0oM''s fuzz.txt'
+wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt
+cat fuzz.txt >> full.txt
 
 echo 'Creating merged wordlists'
 cp full.txt medium_wordlist.txt
