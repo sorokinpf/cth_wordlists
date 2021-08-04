@@ -9,7 +9,7 @@ Kiterunner's default wordlists containt different API's baseurls:
 - /api/
 - etc.
 
-Wordlists was crafted based on real-world examples - swaggers, github and other.
+Wordlists were crafted based on real-world examples - swaggers, github and other.
 
 But what should we do if we know exact API baseurl on target website?
 

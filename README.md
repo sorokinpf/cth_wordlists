@@ -1,1 +1,3 @@
 # cth_wordlists
+
+Each pentester has to build his own wordlists...
